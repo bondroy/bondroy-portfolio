@@ -17,7 +17,7 @@ const paths = {
   ],
   styles: [
     'src/**/*.scss',
-    '!src/_assets/scss/_settings.scss',
+    '!src/_includes/_assets/styles/_settings.scss',
   ],
 }
 
@@ -30,7 +30,7 @@ export function scripts () {
 }
 
 export function styles () {
-  const sassSettings = fs.readFileSync('src/_assets/scss/_settings.scss')
+  const sassSettings = fs.readFileSync('src/_includes/_assets/styles/_settings.scss')
   return gulp.src(paths.styles)
     .pipe(foreach(stream => {
       return stream
@@ -44,7 +44,7 @@ export function styles () {
 
 export function watch () {
   gulp.watch(paths.scripts, scripts)
-  gulp.watch('src/_assets/scss/_settings.scss', styles)
+  gulp.watch('src/_includes/_assets/styles/_settings.scss', styles)
   gulp.watch(paths.styles, gulp.series(styles))
 }
 

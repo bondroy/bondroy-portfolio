@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>{{ title }}</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    {# <link rel="apple-touch-icon" href="icon.png"> #}
+    <!-- Place favicon.ico in the root directory -->
+
+    {# <meta name="theme-color" content="#fafafa"> #}
 
     <style>
-      {% require_once 'css.css' %}
+      {% set page_css %}
+        {% include '_assets/styles/build/reset.css' %}
+        {% include '_assets/styles/build/default.css' %}
+        {% include '_assets/styles/build/global.css' %}
+      {% endset %}
+      {{ page_css }}
     </style>
-
   </head>
   <body>
+
+    {% include 'header/index.njk' %}
 
     {% block body %}
     {% endblock %}
 
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
