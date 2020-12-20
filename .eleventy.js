@@ -1,15 +1,20 @@
 const fs = require('fs')
 
-const required = {}
-
 module.exports = (config) => {
   config.addPassthroughCopy({ public: './' })
+  config.addPassthroughCopy('css')
+  config.addPassthroughCopy('js')
 
-  config.addShortcode('require_once', function(slug, path) {
+  let required = {}
+
+  config.on('beforeBuild', () => {
+    required =  {}
+  })
+
+  config.addShortcode('require_once', function(path) {
+    const slug = this.page.outputPath
     required[slug] = required[slug] || []
-
     if (required[slug].includes(path)) return ''
-
     required[slug].push(path)
     return fs.readFileSync(`${process.cwd()}/src/_includes/${path}`, 'utf8')
   })
