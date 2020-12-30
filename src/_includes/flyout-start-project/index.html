@@ -1,6 +1,9 @@
-<section class="start-project">
-  <div class="start-project__container container">
+<section class="flyout-start-project flyout">
+  <div class="flyout-start-project__container container">
   </div>
 </section>
 
-<style>{% require_once 'flyout-start-project/build/styles.css' %}</style>
+<style>
+  {% require_once '_ui/flyout/build/styles.css' | safe %}
+  {% require_once 'flyout-start-project/build/styles.css' | safe %}
+</style>
