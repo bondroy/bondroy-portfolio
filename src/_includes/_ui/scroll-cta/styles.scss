@@ -1,0 +1,63 @@
+.scroll-cta {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  height: 14px;
+  width: 14px;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.scroll-cta-flex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-cta-label {
+  color: $c-black;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.scroll-cta-line {
+  flex-shrink: 0;
+  margin-left: 20px;
+  width: 180px;
+  height: 2px;
+  background: $c-black;
+}
+
+@media (max-width: 1040px) {
+  .scroll-cta {
+    right: 20px;
+  }
+}
+
+
+// Animation
+// @media (min-width: 1041px) {
+//   .scroll-cta {
+//     opacity: 0;
+//     transition: opacity ease;
+//     transition-delay: 1.2s;
+
+//     .-visible & {
+//       opacity: 1;
+//     }
+//   }
+
+//   .scroll-cta-line {
+//     transform: scaleX(0);
+//     transform-origin: center left;
+//     transition: transform ease;
+//     transition-delay: 1.2s;
+
+//     .-visible & {
+//       transform: scaleX(1);
+//     }
+//   }
+// }

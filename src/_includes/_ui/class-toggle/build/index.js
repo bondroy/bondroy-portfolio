@@ -1,0 +1,1 @@
+"use strict";function classToggle(e,s,t){e=document.querySelector(e);t?(!e.triggerEl||e.triggerEl!==t?e.classList.add(s):e.triggerEl===t&&e.classList.toggle(s),e.triggerEl=t):e.classList.toggle(s)}function classRemove(e,s){document.querySelector(e).classList.remove(s)}function classAdd(e,s){document.querySelector(e).classList.add(s)}

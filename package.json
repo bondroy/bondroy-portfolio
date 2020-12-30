@@ -6,10 +6,12 @@
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
     "build:gulp": "gulp",
     "build:11ty": "eleventy",
+    "build:dev": "eleventy --pathprefix=/bondroy/",
     "clean": "rimraf dist",
     "dev": "npm-run-all clean build:* -p dev:*",
     "dev:gulp": "gulp watch",
-    "dev:11ty": "eleventy --serve"
+    "dev:11ty": "eleventy --serve",
+    "deploy": "npm run build && bash deploy.sh"
   },
   "dependencies": {},
   "devDependencies": {

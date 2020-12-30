@@ -1,0 +1,21 @@
+.flyout-case-studies {
+
+  svg {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50vw;
+    background: #1C1C1C;
+  }
+}
+
+

@@ -1,0 +1,1 @@
+"use strict";function Scroller(n){var e=document.body,o=.2,a=0;function t(){var t=n.getBoundingClientRect().height-1;e.style.height=Math.floor(t)+"px"}!function t(){a+=(window.pageYOffset-a)*o;var e="translateY(-"+a+"px) translateZ(0)";n.style.transform=e;requestAnimationFrame(t)}(),t(),window.addEventListener("DOMContentLoaded",t),window.addEventListener("load",t)}

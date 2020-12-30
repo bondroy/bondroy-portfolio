@@ -1,0 +1,1 @@
+.hero{min-height:100vh;display:flex;align-items:center;padding:150px 0 100px 0;overflow:hidden}.hero__container{display:flex;align-items:center;flex-wrap:wrap}.hero__h{flex-shrink:0}.hero__media{flex-grow:1;display:flex;justify-content:center}.hero__p{position:relative;width:100%;margin-top:50px}

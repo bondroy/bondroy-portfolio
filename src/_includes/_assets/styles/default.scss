@@ -1,0 +1,35 @@
+body {
+  font-family: 'Gogh', sans-serif;
+  font-size: 17px;
+  line-height: 2;
+  color: $c-black;
+}
+
+h1, .h1 {
+  font-size: 130px;
+  line-height: 156px;
+  opacity: 0.9;
+  font-weight: bold;
+  color: #000000;
+}
+
+h2, .h2 {
+  font-size: 70px;
+  letter-spacing: -1px;
+  line-height: 100px;
+  font-weight: bold;
+  color: #000000;
+}
+
+h3, .h3 {
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: bold;
+  color: #000000;
+}
+
+h4, .h4 {
+  font-size: 34px;
+  line-height: 50px;
+  color: #000000;
+}

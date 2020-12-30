@@ -1,0 +1,19 @@
+.tag-scroller {
+  display: flex;
+  align-items: center;
+  height: 320px;
+  background-image: url(/img/bg-1.png);
+  background-size: auto 100%;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.tag-scroller__tags {
+  display: flex;
+  padding: 0 50px;
+}
+
+.tag-scroller__tag {
+  flex-shrink: 0;
+  padding-right: 100px;
+}
