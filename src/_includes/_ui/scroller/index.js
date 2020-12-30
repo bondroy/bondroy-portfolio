@@ -7,6 +7,7 @@ function Scroller (el) {
 
   setBodyHeight()
   window.addEventListener('DOMContentLoaded', setBodyHeight)
+  window.addEventListener('resize', setBodyHeight)
   window.addEventListener('load', setBodyHeight)
 
   function scrollLoop() {

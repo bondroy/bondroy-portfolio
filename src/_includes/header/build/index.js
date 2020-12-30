@@ -1,1 +1,1 @@
-"use strict";
+"use strict";function Header(a){var n=a.querySelector(".header__nav"),r=a.offsetHeight,s=.2,f=0,i=0;!function t(){var e=Math.min(window.pageYOffset-i,r);e=Math.max(e,0);f+=(e-f)*s;e==r&&(i=window.pageYOffset-r);0==e&&(i=window.pageYOffset);a.style.transform="translateY(-"+f+"px) translateZ(0)";n.style.transform="translateY(-"+f+"px) translateZ(0)";requestAnimationFrame(t)}()}
