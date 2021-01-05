@@ -1,15 +1,23 @@
 .button {
   height: 50px;
+  min-width: 140px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 0 40px;
   background: #191919;
   color: white;
   border-radius: 3px;
   font-weight: bold;
 
-  svg {
+  span + svg {
     margin-left: 15px;
     margin-right: -5px;
+  }
+
+  &.-border {
+    color: #191919;
+    border: 2px solid #191919;
+    background: white;
   }
 }

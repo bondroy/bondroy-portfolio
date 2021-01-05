@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="851px" height="225px" viewBox="0 0 851 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="240" height="581"></rect>
+    </defs>
+    <g id="🛠-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Content-/-Let's-talk-business" transform="translate(-325.000000, -181.000000)">
+            <g id="Combined-Shape" transform="translate(542.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M-542,520.076 L-506.844596,581 L-541.999834,581 L-542,520.076 Z M-542,104.151 L-266.844596,581 L-385.396835,581 L-542,310.684 L-542,104.151 Z M-360.098,3.22464278e-13 L-24.8445963,581 L-145.396835,581 L-481.990284,1.25766064e-12 L-360.098,3.22464278e-13 Z M119.902,6.63524791e-13 L455.155404,581 L336.603165,581 L0.00971638673,1.59872116e-12 L119.902,6.63524791e-13 Z M361.902,6.63524791e-13 L697.155404,581 L576.603165,581 L240.009716,1.59872116e-12 L361.902,6.63524791e-13 Z M601.902,6.63524791e-13 L898,513.144 L898.000166,581 L818.603165,581 L482.009716,1.59872116e-12 L601.902,6.63524791e-13 Z M841.902,6.63524791e-13 L898,97.22 L898,303.781 L722.009716,1.59872116e-12 L841.902,6.63524791e-13 Z M215.155404,581 L96.6031653,581 L-239.990284,1.25766064e-12 L-120.098,6.63524791e-13 L215.155404,581 Z" fill="#000000" mask="url(#mask-2)"></path>
+            </g>
+            <g id="Text" transform="translate(325.000000, 181.000000)" fill="#FFFFFF">
+                <polygon id="Rectangle" points="-8.10947634e-12 0 725.661984 0 850.117264 225 126.669881 225"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

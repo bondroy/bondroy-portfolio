@@ -27,8 +27,10 @@
     {% include 'header/index.html' %}
 
     <div class="scroller">
-      {% block body %}{% endblock %}
-      {% include 'footer/index.html' %}
+      <div class="scroller__main">
+        {% block body %}{% endblock %}
+        {% include 'footer/index.html' %}
+      </div>
     </div>
 
     <style>{% require_once '_ui/scroller/build/styles.css' | safe %}</style>

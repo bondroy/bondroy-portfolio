@@ -3,22 +3,30 @@
     <div class="testimonials__carousel">
       <div class="testimonials__item">
         <div class="testimonials__img">
-          <img src="" alt="">
+          <div class="testimonial__img-wrap">
+            <img src="" alt="">
+          </div>
         </div>
         <div class="testimonials__content">
           <div class="testimonials__symbol">“</div>
           <p class="testimonials__quote">Bondroys did everything – with almost no time or effort for me! The best part was that I could completely trust their team to represent our company professionally with our clients.</p>
           <div class="testimonials__author">Alexander Ljung</div>
           <div class="testimonials__role">CEO of Hallyp</div>
-          <div class="testimonials__button"></div>
+
+          <div class="testimonials__nav">
+            <a href="" class="testimonials__button button">
+              See all testimonials
+            </a>
+            <a class="testimonials__prev">{% include '_svgs/arrow-left.svg' %}</a>
+            <a class="testimonials__next">{% include '_svgs/arrow-right.svg' %}</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="testimonials__nav">
-      <a class="testimonials__prev"></a>
-      <a class="testimonials__next"></a>
     </div>
   </div>
 </div>
 
-<style>{% require_once 'testimonials/build/styles.css' | safe %}</style>
+<style>
+  {% require_once '_ui/button/build/styles.css' | safe %}
+  {% require_once 'testimonials/build/styles.css' | safe %}
+</style>

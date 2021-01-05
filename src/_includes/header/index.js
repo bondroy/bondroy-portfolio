@@ -10,7 +10,7 @@ function Header (el) {
   function scrollLoop() {
     let winOffset = Math.min(window.pageYOffset - lastOverflowOffset, headerHeight)
     winOffset = Math.max(winOffset, 0)
-    offset += (winOffset - offset) * speed
+    offset += (winOffset - parseFloat(offset.toFixed(2))) * speed
 
     if (winOffset == headerHeight) {
       lastOverflowOffset = window.pageYOffset - headerHeight

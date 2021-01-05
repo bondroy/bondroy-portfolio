@@ -32,9 +32,9 @@
   </div>
 </header>
 
+<style>{% require_once 'header/build/styles.css' | safe %}</style>
 <script>
   {% require_once '_ui/class-toggle/index.js' | safe %}
   {% require_once 'header/index.js' | safe %}
   new Header(document.querySelector('.header'))
 </script>
-<style>{% require_once 'header/build/styles.css' | safe %}</style>

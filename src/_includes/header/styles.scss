@@ -7,7 +7,7 @@
   width: 100%;
   font-weight: bold;
   background: white;
-  transition: color .5s ease;
+  transition: color $t_flyout $easeOutExpo;
 }
 
 .header__container {
