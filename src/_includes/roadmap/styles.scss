@@ -1,0 +1,51 @@
+.roadmap__list {
+  position: relative;
+  z-index: 0;
+  padding: 60px 0;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 680px;
+    background: black;
+    transform: skewX(30deg) translateX(20px);
+    transform-origin: right top;
+  }
+}
+
+.roadmap__item {
+  color: white;
+
+  & + & { margin-top: 60px; }
+
+  &:nth-of-type(1) { transform: translateX(190px) translateX(-50px); }
+  &:nth-of-type(2) { transform: translateX(260px) translateX(-50px); }
+  &:nth-of-type(3) { transform: translateX(330px) translateX(-50px); }
+  &:nth-of-type(4) { transform: translateX(400px) translateX(-50px); }
+  &:nth-of-type(5) { transform: translateX(470px) translateX(-50px); }
+}
+
+.roadmap__item-h {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.roadmap__item-p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+
+.roadmap__bg {
+  margin-top: 80px;
+  height: 680px;
+  background:
+    url(/img/cta-bg.svg) calc(50% - 23px) 0 repeat-x,
+    url(/img/cta-bg.svg) calc(50% + 34.7px) 100px repeat-x;
+}
