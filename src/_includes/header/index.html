@@ -11,6 +11,7 @@
       <a
         class="header__nav-item -studies"
         onclick="
+          scrollToggle(this);
           classToggle('.header__nav-item.-studies', '-active', this);
           classToggle('.header', '-dark', this);
           classRemove('.flyout-start-project', '-open');
@@ -24,6 +25,7 @@
     <a
       class="header__cta"
       onclick="
+        scrollToggle(this);
         classToggle('.header', '-dark', this);
         classRemove('.flyout-case-studies', '-open');
         classToggle('.flyout-start-project', '-open');
@@ -42,6 +44,7 @@
 </style>
 
 <script>
+  {% require_once '_ui/scroll-toggle/index.js' | safe %}
   {% require_once '_ui/class-toggle/index.js' | safe %}
   {% require_once 'header/index.js' | safe %}
   new Header(document.querySelector('.header'))
