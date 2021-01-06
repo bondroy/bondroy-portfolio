@@ -84,6 +84,9 @@
   ~ .header__nav-item::after { transform: scale(0); }
 }
 
+.flyout-start-project.-open ~ .header__container .header__nav-item {
+  &::after { transform: scale(0); }
+}
 
 // Dark
 .header.-dark {
