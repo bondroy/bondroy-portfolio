@@ -9,16 +9,17 @@
     </a>
     <nav class="header__nav">
       <a
-        class="header__nav-item"
+        class="header__nav-item -studies"
         onclick="
+          classToggle('.header__nav-item.-studies', '-active', this);
           classToggle('.header', '-dark', this);
           classRemove('.flyout-start-project', '-open');
           classToggle('.flyout-case-studies', '-open');
         ">
         Case studies
       </a>
-      <a href="/services" class="header__nav-item">Services</a>
-      <a href="/careers" class="header__nav-item">Careers</a>
+      <a href="/services" class="header__nav-item -services">Services</a>
+      <a href="/careers" class="header__nav-item -careers">Careers</a>
     </nav>
     <a
       class="header__cta"
@@ -32,7 +33,14 @@
   </div>
 </header>
 
-<style>{% require_once 'header/build/styles.css' | safe %}</style>
+<style>
+  {% require_once 'header/build/styles.css' | safe %}
+
+  .{{ menu_item }}::after {
+    transform: scaleX(1);
+  }
+</style>
+
 <script>
   {% require_once '_ui/class-toggle/index.js' | safe %}
   {% require_once 'header/index.js' | safe %}
