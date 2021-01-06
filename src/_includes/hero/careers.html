@@ -1,0 +1,27 @@
+<div class="hero">
+  <div class="hero__container container">
+    <h1 class="hero__h">
+      <div><span>Join the</span></div>
+      <div><span class="-delay-1">Bondroys!</span></div>
+    </h1>
+
+    <div class="hero__p">
+      <p class="-delay-2">
+        We’re fully remote studio which shapes the products that improve the lives of millions.
+        As you might already know we are obsessed with building best bonds with our clients but we also value team bonds even more!
+      </p>
+      <p class="-delay-3">
+        We put people over profit and we never want to miss top talents. Consider yourself as a good fit? <br>
+        Don’t hesitate to drop us a line with your experience and portfolio at:
+        <a href="mailto:careers@bondroy.com">careers@bondroy.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hero__scroll container -delay-3">
+    {% set scroll_cta_text = 'Openings' %}
+    {% include '_ui/scroll-cta/index.html' %}
+  </div>
+</div>
+
+<style>{% require_once 'hero/build/styles.css' | safe %}</style>

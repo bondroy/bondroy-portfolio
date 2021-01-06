@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -7,6 +8,7 @@
 }
 
 .hero__container {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -23,9 +25,18 @@
 }
 
 .hero__p {
-  position: relative;
   width: 100%;
   margin-top: 50px;
+
+  p + p { margin-top: 30px; }
+  a { font-weight: bold; }
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 // Animations
@@ -41,10 +52,10 @@ $d: .5;
       content: '';
       position: absolute;
       background: white;
-      bottom: 100%;
+      bottom: 90%;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 120%;
     }
 
     span {
@@ -54,26 +65,15 @@ $d: .5;
       will-change: transform;
     }
 
-    &:nth-of-type(1) {
-      z-index: 3;
-    }
-
-    &:nth-of-type(2) {
-      z-index: 2;
-      span { animation-delay: ($t * $d * 1); }
-    }
-
-    &:nth-of-type(3) {
-      z-index: 1;
-      span { animation-delay: ($t * $d * 2); }
-    }
+    &:nth-of-type(1) { z-index: 3; }
+    &:nth-of-type(2) { z-index: 2; }
+    &:nth-of-type(3) { z-index: 1; }
   }
 }
 
 .hero__p p {
   transform: translateX(-20px);
   animation: untransform $t $easeOutExpo forwards;
-  animation-delay: ($t * $d * 3);
   will-change: transform;
 }
 
@@ -81,17 +81,30 @@ $d: .5;
   .scroll-cta-label {
     transform: translateX(10px);
     animation: untransform $t $easeOutExpo forwards;
-    animation-delay: ($t * $d * 3);
   }
 
   .scroll-cta-line {
     transform: scaleX(0);
     transform-origin: center left;
     animation: untransform $t * 3 $easeOutExpo forwards;
-    animation-delay: ($t * $d * 3.5);
   }
 }
 
 @keyframes untransform {
   to { transform: none }
+}
+
+.hero {
+  .-delay-1 { animation-delay: ($t * $d * 1); }
+  .-delay-2 { animation-delay: ($t * $d * 2); }
+  .-delay-3 {
+    animation-delay: ($t * $d * 3);
+    .scroll-cta-label { animation-delay: ($t * $d * 3); }
+    .scroll-cta-line { animation-delay: ($t * $d * 3.5); }
+  }
+  .-delay-4 {
+    animation-delay: ($t * $d * 4);
+    .scroll-cta-label { animation-delay: ($t * $d * 4); }
+    .scroll-cta-line { animation-delay: ($t * $d * 4.5); }
+  }
 }

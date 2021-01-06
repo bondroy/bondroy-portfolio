@@ -41,7 +41,7 @@
     font-style: normal;
   }
 
-  &:last-child {
+  &:last-child:not(:first-child) {
     text-align: right;
   }
 }

@@ -1,7 +1,7 @@
 .scroll-cta {
   position: absolute;
-  right: 0;
-  top: -20px;
+  right: 30px;
+  bottom: -14px;
   height: 14px;
   width: 14px;
   transform: rotate(90deg);
@@ -14,11 +14,13 @@
   left: 0;
   display: flex;
   align-items: center;
+  transform: translateX(-100%);
 }
 
 .scroll-cta-label {
   color: $c-black;
   font-size: 14px;
+  line-height: 1;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -31,33 +33,8 @@
   background: $c-black;
 }
 
-@media (max-width: 1040px) {
-  .scroll-cta {
-    right: 20px;
-  }
-}
-
-
-// Animation
-// @media (min-width: 1041px) {
+// @media (max-width: 1040px) {
 //   .scroll-cta {
-//     opacity: 0;
-//     transition: opacity ease;
-//     transition-delay: 1.2s;
-
-//     .-visible & {
-//       opacity: 1;
-//     }
-//   }
-
-//   .scroll-cta-line {
-//     transform: scaleX(0);
-//     transform-origin: center left;
-//     transition: transform ease;
-//     transition-delay: 1.2s;
-
-//     .-visible & {
-//       transform: scaleX(1);
-//     }
+//     right: 20px;
 //   }
 // }

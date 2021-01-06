@@ -1,0 +1,23 @@
+<div class="hero">
+  <div class="hero__container container">
+    <h1 class="hero__h">
+      <div><span>We build long-</span></div>
+      <div><span class="-delay-1">lasting business</span></div>
+      <div><span class="-delay-2">bonds.</span></div>
+    </h1>
+
+    <div class="hero__p">
+      <p class="-delay-3">
+        We specialize in building SaaS products and depending on your budget we approach projects in a holistic way. <br>
+        We’ll support you from idea to the market and after release as well.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero__scroll container -delay-3">
+    {% set scroll_cta_text = 'Services' %}
+    {% include '_ui/scroll-cta/index.html' %}
+  </div>
+</div>
+
+<style>{% require_once 'hero/build/styles.css' | safe %}</style>

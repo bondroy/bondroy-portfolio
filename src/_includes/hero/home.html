@@ -1,0 +1,24 @@
+<div class="hero">
+  <div class="hero__container container">
+    <h1 class="hero__h">
+      <div><span>Design.</span></div>
+      <div><span class="-delay-1">Develop.</span></div>
+      <div><span class="-delay-2">Deliver.</span></div>
+    </h1>
+
+    {# <div class="hero__media">
+      {% include '_svgs/play.svg' %}
+    </div> #}
+
+    <div class="hero__p">
+      <p class="-delay-3">Design oriented development studio created to help revolutionize industries.</p>
+    </div>
+  </div>
+
+  <div class="hero__scroll container -delay-3">
+    {% set scroll_cta_text = 'Scroll' %}
+    {% include '_ui/scroll-cta/index.html' %}
+  </div>
+</div>
+
+<style>{% require_once 'hero/build/styles.css' | safe %}</style>
