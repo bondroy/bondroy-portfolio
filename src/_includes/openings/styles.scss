@@ -1,0 +1,45 @@
+.openings__container {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: calc(100% - 60px);
+    border-bottom: 1px solid #E9E9E9;
+  }
+}
+
+.openings .headline {
+  margin-bottom: 120px;
+}
+
+.opening {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & + & {
+    margin-top: 80px;
+  }
+}
+
+.opening__a {
+  margin-left: auto;
+
+  svg { margin-left: 10px; }
+}
+
+.opening__p {
+  margin-top: 10px;
+  width: 100%;
+
+  span + span::before {
+    content: '•';
+    display: inline-block;
+    margin: 0 20px;
+  }
+}

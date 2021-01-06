@@ -1,0 +1,25 @@
+<section class="openings">
+  <div class="openings__container container">
+    {% set headline_text = 'Current openings' %}
+    {% include '_ui/headline/index.html' %}
+
+    {% for opening in openings %}
+    <a href="/careers/{{ opening.title | slug }}/" class="opening">
+      <h4 class="opening__h">{{ opening.title }}</h4>
+      <span class="opening__a">
+        <strong>See more</strong>
+        {% include '_svgs/arrow-more.svg' %}
+      </span>
+      <p class="opening__p">
+        {% for tag in opening.tags %}
+          <span>{{ tag }}</span>
+        {% endfor %}
+      </p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  {% require_once 'openings/build/styles.css' | safe %}
+</style>

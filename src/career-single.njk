@@ -1,0 +1,44 @@
+---
+pagination:
+    data: openings
+    size: 1
+    alias: opening
+permalink: "careers/{{ opening.title | slug }}/"
+title: Careers
+menu_item: '-careers'
+---
+
+{% extends 'page.html' %}
+
+{% block body %}
+  <div class="opening">
+    <div class="opening__container container">
+      <h2 class="opening__h">{{ opening.title }}</h2>
+      {{ opening.content | safe }}
+      <div class="opening__footer">
+        <div class="openinng__footer-container container">
+          <a href="/careers/" class="opening__back">
+            {% include '_svgs/arrow-more.svg' %}
+            <strong>Go back</strong>
+          </a>
+          <a href="mailto:careers@bondroy.com" class="opening__button button">
+            Apply now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    {% require_once '_ui/button/build/styles.css' | safe %}
+    {% require_once 'opening/build/styles.css' | safe %}
+  </style>
+
+  <script>
+    {% require_once 'opening/index.js' | safe %}
+    new OpeningFooter(
+      document.querySelector('.opening__footer'),
+      document.querySelector('.opening__container')
+    )
+  </script>
+{% endblock %}

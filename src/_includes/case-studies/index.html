@@ -1,9 +1,7 @@
 <section class="case-studies">
   <div class="case-studies__container container">
-    <h2 class="case-studies__h">
-      {% include '_svgs/headline-decorator.svg' %}
-      Some of our projects
-    </h2>
+    {% set headline_text = 'Some of our projects' %}
+    {% include '_ui/headline/index.html' %}
 
     {% for i in [0,1,2,3] %}
     <div class="case-study">
