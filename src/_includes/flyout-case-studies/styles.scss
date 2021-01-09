@@ -1,6 +1,7 @@
 .flyout-case-studies {
   overflow: hidden;
   height: 90vh;
+  min-height: 850px;
   // max-height: 900px;
 }
 
@@ -9,7 +10,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   max-height: 100%;
   transform: skewX(30deg);
   transform-origin: right top;
@@ -19,7 +20,7 @@
 
 .flyout-case-studies__bg-container {
   display: flex;
-  padding-top: 170px;
+  padding-top: 140px;
   transform-origin: right top;
   transform: skewX(-30deg) translateX(-10px) translateY(90vh) translateY(-70px);
   opacity: 0;
@@ -34,7 +35,7 @@
 
 .flyout-case-studies__bg-logo {
   opacity: .5;
-  transform: translateY(50px);
+  transform: translateY(80px);
 }
 
 .flyout-case-studies__items {
@@ -45,10 +46,14 @@
 
 .flyout-case-studies__item {
   display: flex;
+  padding: 30px 0;
+  transition: opacity .5s $easeOutExpo;
 
-  & + & {
-    margin-top: 60px;
+  .flyout-case-studies__items:hover & {
+    opacity: .3;
   }
+
+  &:hover { opacity: 1 !important; }
 }
 
 .flyout-case-studies__item-count {

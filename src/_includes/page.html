@@ -21,6 +21,11 @@
       {% endset %}
       {{ page_css | safe }}
     </style>
+
+    <script>
+      {% require_once '_ui/renderer/build/index.js' | safe %}
+      window.renderer = new Renderer()
+    </script>
   </head>
   <body>
 

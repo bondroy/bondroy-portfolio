@@ -14,17 +14,22 @@
 }
 
 .openings .headline {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .opening {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 40px 0;
 
-  & + & {
-    margin-top: 80px;
+  transition: opacity .5s $easeOutExpo;
+
+  .openings:hover & {
+    opacity: .5;
   }
+
+  &:hover { opacity: 1 !important; }
 }
 
 .opening__a {

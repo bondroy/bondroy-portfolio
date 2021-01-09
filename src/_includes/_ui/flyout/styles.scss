@@ -1,7 +1,7 @@
 .flyout {
   z-index: -1;
   position: fixed;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   transform: translateY(-100%);
