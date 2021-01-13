@@ -38,10 +38,17 @@
       </div>
     </div>
 
-    <style>{% require_once '_ui/scroller/build/styles.css' | safe %}</style>
+    <div class="cursor"></div>
+
+    <style>
+      {% require_once '_ui/cursor/build/styles.css' | safe %}
+      {% require_once '_ui/scroller/build/styles.css' | safe %}
+    </style>
     <script>
+      {% require_once '_ui/cursor/build/index.js' | safe %}
       {% require_once '_ui/scroller/build/index.js' | safe %}
       new Scroller(document.querySelector('.scroller'))
+      new Cursor(document.querySelector('.cursor'))
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

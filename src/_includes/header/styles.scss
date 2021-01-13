@@ -10,6 +10,10 @@
   transition: color $t_flyout $easeOutExpo;
 }
 
+// * { border: 1px solid red; }
+// *::before { border: 1px solid red; }
+// *::after { border: 1px solid red; }
+
 .header__container {
   display: flex;
   align-items: center;
