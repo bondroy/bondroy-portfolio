@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
 }
 
 .footer__container {
@@ -14,27 +14,27 @@
   width: 100%;
 
   &.-first {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 
     .footer__col:first-child,
     .footer__col:last-child {
-      width: 200px;
+      width: 20rem;
     }
   }
 
   &.-last {
-    margin-top: 80px;
+    margin-top: 8rem;
 
     .footer__col:first-child,
     .footer__col:last-child {
-      width: 250px;
+      width: 25rem;
     }
   }
 }
 
 .footer__col {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 
   &.-meta {
     color: #A1A1A1;
@@ -52,7 +52,7 @@
 
   a {
     position: relative;
-    padding: 20px;
+    padding: 2rem;
   }
 
   a + a::before {

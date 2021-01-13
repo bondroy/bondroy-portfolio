@@ -1,27 +1,27 @@
 .openings__container {
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
   position: relative;
 
   &::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 30px;
-    width: calc(100% - 60px);
-    border-bottom: 1px solid #E9E9E9;
+    left: 3rem;
+    width: calc(100% - 6rem);
+    border-bottom: .1rem solid #E9E9E9;
   }
 }
 
 .openings .headline {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .opening {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 4rem 0;
 
   transition: opacity .5s $easeOutExpo;
 
@@ -35,16 +35,16 @@
 .opening__a {
   margin-left: auto;
 
-  svg { margin-left: 10px; }
+  svg { margin-left: 1rem; }
 }
 
 .opening__p {
-  margin-top: 10px;
+  margin-top: 1rem;
   width: 100%;
 
   span + span::before {
     content: '•';
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 2rem;
   }
 }

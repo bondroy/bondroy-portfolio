@@ -1,33 +1,33 @@
 .cta {
   display: flex;
   align-items: center;
-  height: 580px;
+  height: 58rem;
 }
 
 .cta__container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 850px;
-  padding: 70px 100px 70px 100px;
+  max-width: 85rem;
+  padding: 7rem 10rem 7rem 10rem;
 }
 
 .cta__h {
-  font-size: 70px;
-  letter-spacing: -1px;
-  line-height: 100px;
+  font-size: 7rem;
+  letter-spacing: -.1rem;
+  line-height: 10rem;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .cta__p {
   flex-grow: 1;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 27px;
-  padding-left: 5px;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
+  padding-left: .5rem;
 }
 
 .cta__button {
-  margin-right: 100px;
+  margin-right: 10rem;
 }
