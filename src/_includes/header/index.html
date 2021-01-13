@@ -4,7 +4,7 @@
   {% include 'flyout-case-studies/index.html' %}
 
   <div class="header__container container">
-    <a href="/" class="header__logo">
+    <a href="{{ '/' | url }}" class="header__logo">
       {% include '_svgs/logo.svg' %}
     </a>
     <nav class="header__nav">
@@ -19,8 +19,8 @@
         ">
         Case studies
       </a>
-      <a href="/services" class="header__nav-item -services">Services</a>
-      <a href="/careers" class="header__nav-item -careers">Careers</a>
+      <a href="{{ '/services/' | url }}" class="header__nav-item -services">Services</a>
+      <a href="{{ '/careers/' | url }}" class="header__nav-item -careers">Careers</a>
     </nav>
     <a
       class="header__cta"

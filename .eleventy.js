@@ -27,6 +27,7 @@ module.exports = (config) => {
   config.setDataDeepMerge(true)
 
   return {
+    // pathPrefix: 'bondroy',
     htmlTemplateEngine: 'njk',
     dir: {
       input: 'src',
