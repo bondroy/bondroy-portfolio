@@ -37,3 +37,9 @@ h4, .h4 {
   line-height: 5rem;
   color: #000000;
 }
+
+@media (min-width: 1440px) {
+  html {
+    font-size: calc(100vw / 144);
+  }
+}
