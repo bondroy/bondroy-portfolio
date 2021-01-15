@@ -1,0 +1,1 @@
+"use strict";function Hero(r){var t=new ScreenProgress(r,{firstEl:!0}),n=r.querySelectorAll(".hero__h div"),o=r.querySelector(".hero__scroll");t.onProgress(function(e){n.forEach(function(r,t){r.style.transform="translateY(".concat(-100*(n.length-t)*e,"px) translateZ(0)")}),o.style.transform="translateY(".concat(window.innerHeight*e*.6,"px) translateX(-50%) translateZ(0)")})}

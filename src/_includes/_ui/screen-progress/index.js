@@ -1,4 +1,4 @@
-function ScreenProgress (container) {
+function ScreenProgress (container,  {firstEl} = {}) {
   let offset = 0
   let height = 0
   let progress = 0
@@ -10,8 +10,9 @@ function ScreenProgress (container) {
   window.addEventListener('load', setVars)
 
   window.renderer.onUpdate((pageY) => {
-    const start = offset - window.innerHeight
-    progress = (pageY - start) / (height + window.innerHeight)
+    const winH = firstEl ? 0 : window.innerHeight
+    const start = offset - winH
+    progress = (pageY - start) / (height + winH)
   })
 
   window.renderer.onRender(() => {
@@ -23,7 +24,16 @@ function ScreenProgress (container) {
     height = container.offsetHeight
   }
 
+  function step (progress, from, to, cb) {
+    const length = to - from
+    if (progress >= from && progress <= from + length) {
+      const stepProgress = (progress - from) / length
+      cb(stepProgress)
+    }
+  }
+
   return {
-    onProgress: (cb) => renderCallback = cb
+    onProgress: (cb) => renderCallback = cb,
+    step
   }
 }

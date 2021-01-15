@@ -42,6 +42,8 @@
     font-style: normal;
   }
 
+  &.-logo svg { width: 11.8rem; }
+
   &:last-child:not(:first-child) {
     text-align: right;
   }

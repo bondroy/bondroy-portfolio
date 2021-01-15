@@ -1,10 +1,13 @@
 .case-studies .headline {
+  background-color: white;
   margin-bottom: 12rem;
 }
 
 .case-study {
   display: flex;
   align-items: center;
+  position: relative;
+  background-color: white;
 
   & + & { margin-top: 18rem; }
 }
@@ -24,6 +27,7 @@
   background: white;
   transform: scaleY(0);
   transform-origin: bottom;
+  transition: transform 1s $easeOutExpo;
 }
 
 .case-study__content {
@@ -34,6 +38,7 @@
   left: calc(50vw + 5rem);
   opacity: 0;
   transform: translateY(-50%) translateY(10rem);
+  transition: opacity .5s $easeOutExpo;
 }
 
 .case-study__h {

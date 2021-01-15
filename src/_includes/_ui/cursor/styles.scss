@@ -6,6 +6,7 @@
   pointer-events: none;
   // mix-blend-mode: exclusion;
   // filter: invert(1);
+  will-change: all;
 
   &::before {
     background: black;

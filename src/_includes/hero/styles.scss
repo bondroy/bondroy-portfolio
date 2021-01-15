@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 15rem 0 10rem 0;
+  padding: 8rem 0 0 0;
   overflow: hidden;
   background: white;
 }
@@ -42,8 +42,8 @@
 }
 
 // Animations
-$t: .7s;
-$d: .5;
+$t: .9s;
+$d: .8;
 
 .hero__h {
 
@@ -74,6 +74,7 @@ $d: .5;
 }
 
 .hero__p p {
+  opacity: 0;
   transform: translateX(-2rem);
   animation: untransform $t $easeOutExpo forwards;
   will-change: transform;
@@ -93,7 +94,7 @@ $d: .5;
 }
 
 @keyframes untransform {
-  to { transform: none }
+  to { transform: none; opacity: 1; }
 }
 
 .hero {
