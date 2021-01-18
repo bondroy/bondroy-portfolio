@@ -8,6 +8,6 @@
   transition: transform $t_flyout $easeOutExpo;
 
   &.-open {
-    transform: translateY(0);
+    transform: none;
   }
 }

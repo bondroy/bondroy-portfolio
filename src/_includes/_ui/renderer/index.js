@@ -18,7 +18,6 @@ const Renderer = function () {
     while(dt > step) {
       dt = dt - step
       offset += (window.pageYOffset - offset) * speed
-      // offset = parseFloat(offset.toFixed(2))
       updateCallbacks.forEach(cb => cb(offset))
     }
 

@@ -1,24 +1,34 @@
 function TagScroller (scroller) {
-  const screenProgress = new ScreenProgress(scroller, { firstEl: true })
+  const screenProgress = new ScreenProgress(scroller, { firstEl: false })
   const track = scroller.querySelector('.tag-scroller__track')
-  let offsetLeft = track.scrollWidth - window.innerWidth
+  let offsetLeft
 
+  setVars()
+  window.addEventListener('DOMContentLoaded', setVars)
+  window.addEventListener('resize', setVars)
+  window.addEventListener('load', setVars)
 
-  screenProgress.onProgress((progress) => {
+  screenProgress.onProgress(onProgress)
+
+  function onProgress (progress) {
     // before
-    if (progress < -.1) track.style.opacity = 0
+    if (progress < .2) track.style.opacity = 0
     // after
-    if (progress > .76) track.style.opacity = 0
+    if (progress > .7) track.style.opacity = 0
 
-    screenProgress.step(progress, -.1, 0, (progress) => {
+    screenProgress.step(progress, .2, .3, (progress) => {
       track.style.opacity = progress
     })
-    screenProgress.step(progress, .66, .76, (progress) => {
+    screenProgress.step(progress, .6, .7, (progress) => {
       track.style.opacity = 1 - progress
     })
-    screenProgress.step(progress, -.1, .76, (progress) => {
-      track.style.transform = `translateY(5rem) translatey(${-10 * progress}rem)`
+    screenProgress.step(progress, .2, .7, (progress) => {
+      track.style.transform = `translateY(-40vh) translateY(${60 * progress}vh)`
       track.scrollLeft = offsetLeft * progress
     })
-  })
+  }
+
+  function setVars () {
+    offsetLeft = track.scrollWidth - window.innerWidth
+  }
 }

@@ -14,8 +14,8 @@ module.exports = (config) => {
   config.addShortcode('require_once', function(path) {
     const slug = this.page.outputPath
     required[slug] = required[slug] || []
-    if (required[slug].includes(path)) return ''
-    required[slug].push(path)
+    if (required[slug].includes(path.val)) return ''
+    required[slug].push(path.val)
     return fs.readFileSync(`${process.cwd()}/src/_includes/${path}`, 'utf8')
   })
 

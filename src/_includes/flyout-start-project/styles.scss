@@ -1,4 +1,27 @@
 .flyout-start-project {
-  background: $c-black;
   height: 100vh;
+  width: 100%;
+  transform: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 14rem;
+    transform: scale(0) translateX(50vw) translateY(-50vw);
+    width: 100vw;
+    height: 100vw;
+    border-radius: 50%;
+    background: black;
+    transform-origin: top right;
+    transition: transform 1s $easeOutExpo;
+  }
+
+  &.-open {
+    transform: none;
+
+    &::before {
+      transform: scale(2.5) translateX(50vw) translateY(-50vw);
+    }
+  }
 }

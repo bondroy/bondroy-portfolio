@@ -1,1 +1,1 @@
-.flyout-start-project{background:#191919;height:100vh}
+.flyout-start-project{height:100vh;width:100%;transform:none}.flyout-start-project::before{content:'';position:absolute;top:0;right:14rem;transform:scale(0) translateX(50vw) translateY(-50vw);width:100vw;height:100vw;border-radius:50%;background:#000;transform-origin:top right;transition:transform 1s cubic-bezier(.16,1,.3,1)}.flyout-start-project.-open{transform:none}.flyout-start-project.-open::before{transform:scale(2.5) translateX(50vw) translateY(-50vw)}
