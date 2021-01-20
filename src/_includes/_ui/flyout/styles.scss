@@ -6,8 +6,10 @@
   width: 100%;
   transform: translateY(-100%);
   transition: transform $t_flyout $easeOutExpo;
+  pointer-events: none;
 
   &.-open {
     transform: none;
+    pointer-events: all;
   }
 }

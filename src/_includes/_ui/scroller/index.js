@@ -10,13 +10,14 @@ function Scroller (scroller) {
   window.renderer.onUpdate((offset) => {
     skew = window.pageYOffset - offset
     skew = skew > 0
-      ? Math.min(skew, 30)
-      : Math.max(skew, -30)
+      ? Math.min(skew, 50)
+      : Math.max(skew, -50)
+    skew = skew / 20
   })
 
   window.renderer.onRender((offset) => {
     scroller.scrollTop = offset
-    scroller.style.transform = `skew(0, ${(skew)/20}deg)`
+    // scroller.style.transform = `skew(0, ${skew}deg)`
   })
 
   function setBodyHeight () {

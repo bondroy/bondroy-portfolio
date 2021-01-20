@@ -1,5 +1,5 @@
 function Cursor (el) {
-  const links = document.querySelectorAll('a')
+  const targets = document.querySelectorAll('a, [data-cursor]')
   const nativeCords = { x: 0, y: 0 }
   const cords       = { x: 0, y: 0 }
   const skew        = { x: 0, y: 0 }
@@ -7,9 +7,9 @@ function Cursor (el) {
   let targetScale = 1
   let scale = 1
 
-  links.forEach(link => {
-    link.addEventListener('mouseenter', onLinkMouseEnter)
-    link.addEventListener('mouseleave', onLinkMouseLeave)
+  targets.forEach(target => {
+    target.addEventListener('mouseover', onTargetMouseEnter)
+    target.addEventListener('mouseout', onTargetMouseLeave)
   })
   window.addEventListener('mousemove', onMouseMove)
   window.renderer.onUpdate(onUpdate)
@@ -20,13 +20,15 @@ function Cursor (el) {
     nativeCords.y = e.y
   }
 
-  function onLinkMouseEnter (e) {
-    targetScale = e.target.offsetHeight / 10
+  function onTargetMouseEnter (e) {
+    e.stopPropagation()
+    targetScale = e.currentTarget.dataset.cursorScale || e.currentTarget.offsetHeight / 10
+    targetScale = Number(targetScale)
     el.style.filter = 'invert(1)'
     el.style.mixBlendMode = 'exclusion'
   }
 
-  function onLinkMouseLeave (e) {
+  function onTargetMouseLeave (e) {
     targetScale = 1
     el.style.filter = ''
     el.style.mixBlendMode = ''
