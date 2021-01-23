@@ -124,4 +124,11 @@
     color: $c-black;
     &::before { background: white; }
   }
+
+  .header__nav,
+  .header__logo path:last-child {
+    transition: all .2s ease;
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }
