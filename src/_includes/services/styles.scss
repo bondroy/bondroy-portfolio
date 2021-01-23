@@ -52,20 +52,47 @@
   img {
     width: 100%;
     max-width: none;
-    margin-top: -15rem;
   }
 
-  &.-second img { width: 120%; }
-}
+  &.-first {
+    top: -10rem;
+    left: 10rem;
+  }
 
-.service__main-img {
-  width: 100%;
-  max-width: none;
-  margin-top: -15rem;
+  &.-second {
+    top: -12rem;
+    left: 2rem;
+
+    .service__main-img {
+      width: 120%;
+    }
+  }
+
+  &.-third {
+    top: -12rem;
+    left: 2rem;
+
+    .service__main-img {
+      width: 115%;
+    }
+  }
 }
 
 .service__overlay {
   position: absolute;
   top: 0;
   left: 0;
+
+  &.-Bucket { left: 7rem; }
+  &.-Swatches { left: 7rem; }
+  &.-Tools { left: 5rem; }
+  &.-Hand { left: 5rem; }
+  &.-Cube { left: 10rem; }
+  &.-Controls { left: 10rem; }
+  &.-Keyboard { left: 11rem; }
+  &.-Phone { left: 13rem; }
+  &.-Curves { left: 10rem; }
+  &.-Image { left: 10rem; }
+  &.-Loupe { left: 10rem; }
+  &.-Sphere { left: 20rem; top: -5rem; }
 }
