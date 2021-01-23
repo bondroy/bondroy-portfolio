@@ -57,9 +57,6 @@ function Testimonials (el) {
         el.style.transform = 'scale(.3)'
         el.style.opacity = 0
         break
-      case 'inactive':
-        el.style.opacity = 0
-        break
     }
   }
 
@@ -76,9 +73,6 @@ function Testimonials (el) {
         break
       case 'prev':
         el.style.transform = 'translateY(-100px)'
-        el.style.opacity = 0
-        break
-      case 'inactive':
         el.style.opacity = 0
         break
     }

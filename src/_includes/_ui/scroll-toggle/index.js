@@ -1,5 +1,9 @@
 (function () {
   window.scrollToggle = scrollToggle
+  window.scrollEnable = () => {
+    prevTrigger = undefined
+    enableScroll()
+  }
 
   let prevTrigger
   function scrollToggle (trigger) {
@@ -52,4 +56,10 @@
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
   }
+
+  document.querySelectorAll('.flyout').forEach(el => {
+    el.addEventListener('scroll', e => {
+      console.log(e)
+    })
+  })
 })()

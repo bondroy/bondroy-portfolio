@@ -4,8 +4,6 @@
   width: 10px;
   height: 10px;
   pointer-events: none;
-  // mix-blend-mode: exclusion;
-  // filter: invert(1);
   will-change: all;
 
   &::before {
@@ -18,4 +16,8 @@
     height: 100%;
     border-radius: 50%;
   }
+}
+
+[data-cursor] {
+  cursor: pointer;
 }

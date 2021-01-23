@@ -46,6 +46,7 @@
 }
 
 .service__image {
+  position: relative;
   padding-left: 10rem;
 
   img {
@@ -57,3 +58,14 @@
   &.-second img { width: 120%; }
 }
 
+.service__main-img {
+  width: 100%;
+  max-width: none;
+  margin-top: -15rem;
+}
+
+.service__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
