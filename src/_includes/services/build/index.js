@@ -1,0 +1,1 @@
+"use strict";function Services(r){r.querySelectorAll(".service__image").forEach(function(r){var e=new ScreenProgress(r),t=Array.from(r.querySelectorAll(".service__overlay")).map(function(r){return{el:r,y:parseInt(r.dataset.parallax)}});e.onProgress(function(r){return e=r,void t.forEach(function(r){r.el.style.transform="translateY(".concat(r.y*e,"px) translateZ(0)")});var e})})}

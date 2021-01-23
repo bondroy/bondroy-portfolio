@@ -1,6 +1,6 @@
 <div class="services">
   <div class="services__container container">
-    <div class="service">
+    <div class="service -branding">
       <div class="service__text">
         <div class="service__counter">1.</div>
         <div class="service__line"></div>
@@ -15,14 +15,14 @@
       </div>
       <div class="service__image -first">
         <img src="/img/Service_1-BG.jpg" class="service__main-img" alt="">
-        <img src="/img/Service_1-Bucket.png" class="service__overlay -Bucket" alt="">
-        <img src="/img/Service_1-Swatches.png" class="service__overlay -Swatches" alt="">
-        <img src="/img/Service_1-Tools.png" class="service__overlay -Tools" alt="">
-        <img src="/img/Service_1-Hand.png" class="service__overlay -Hand" alt="">
+        <img src="/img/Service_1-Bucket.png" class="service__overlay -Bucket" alt="" data-parallax="-100">
+        <img src="/img/Service_1-Swatches.png" class="service__overlay -Swatches" alt="" data-parallax="100">
+        <img src="/img/Service_1-Tools.png" class="service__overlay -Tools" alt="" data-parallax="-200">
+        <img src="/img/Service_1-Hand.png" class="service__overlay -Hand" alt="" data-parallax="-100">
       </div>
     </div>
 
-    <div class="service">
+    <div class="service -apps">
       <div class="service__text">
         <div class="service__counter">2.</div>
         <div class="service__line"></div>
@@ -47,14 +47,14 @@
       </div>
       <div class="service__image -second">
         <img src="/img/Service_2-BG.jpg" class="service__main-img" alt="">
-        <img src="/img/Service_2-Controls.png" class="service__overlay -Controls" alt="">
-        <img src="/img/Service_2-Cube.png" class="service__overlay -Cube" alt="">
-        <img src="/img/Service_2-Keyboard.png" class="service__overlay -Keyboard" alt="">
-        <img src="/img/Service_2-Phone.png" class="service__overlay -Phone" alt="">
+        <img src="/img/Service_2-Controls.png" class="service__overlay -Controls" alt="" data-parallax="50">
+        <img src="/img/Service_2-Cube.png" class="service__overlay -Cube" alt="" data-parallax="-300">
+        <img src="/img/Service_2-Keyboard.png" class="service__overlay -Keyboard" alt="" data-parallax="100">
+        <img src="/img/Service_2-Phone.png" class="service__overlay -Phone" alt="" data-parallax="-200">
       </div>
     </div>
 
-    <div class="service">
+    <div class="service -audits">
       <div class="service__text">
         <div class="service__counter">3.</div>
         <div class="service__line"></div>
@@ -70,14 +70,20 @@
       </div>
       <div class="service__image -third">
         <img src="/img/Service_3-BG.jpg" class="service__main-img" alt="">
-        <img src="/img/Service_3-Curves.png" class="service__overlay -Curves" alt="">
-        <img src="/img/Service_3-Image.png" class="service__overlay -Image" alt="">
-        <img src="/img/Service_3-Loupe.png" class="service__overlay -Loupe" alt="">
-        <img src="/img/Service_3-Sphere.png" class="service__overlay -Sphere" alt="">
+        <img src="/img/Service_3-Sphere.png" class="service__overlay -Sphere" alt="" data-parallax="-150">
+        <img src="/img/Service_3-Curves.png" class="service__overlay -Curves" alt="" data-parallax="-100">
+        <img src="/img/Service_3-Loupe.png" class="service__overlay -Loupe" alt="" data-parallax="-50">
+        <img src="/img/Service_3-Image.png" class="service__overlay -Image" alt="" data-parallax="50">
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  {% require_once '_ui/screen-progress/build/index.js' | safe %}
+  {% require_once 'services/build/index.js' | safe %}
+  new Services(document.querySelector('.services'))
+</script>
 
 <style>
   {% require_once 'services/build/styles.css' | safe %}
