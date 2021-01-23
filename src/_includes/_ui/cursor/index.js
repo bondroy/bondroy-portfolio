@@ -12,6 +12,8 @@ function Cursor (el) {
     target.addEventListener('mouseout', onTargetMouseLeave)
   })
   window.addEventListener('mousemove', onMouseMove)
+  document.addEventListener('mouseenter', () => { targetScale = 1 })
+  document.addEventListener('mouseleave', () => { targetScale = 0 })
   window.renderer.onUpdate(onUpdate)
   window.renderer.onRender(onRender)
 

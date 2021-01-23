@@ -3,7 +3,7 @@ function Services (el) {
 
   compositions.forEach(composition => {
     const screenProgress = new ScreenProgress(composition)
-    const layers = Array.from(composition.querySelectorAll('.service__overlay'))
+    const layers = Array.from(composition.querySelectorAll('[data-parallax]'))
       .map(el => {
         return {
           el,
@@ -15,7 +15,7 @@ function Services (el) {
 
   function onProgress (progress, layers) {
     layers.forEach(layer => {
-      layer.el.style.transform = `translateY(${layer.y * progress}px) translateZ(0)`
+      layer.el.style.transform = `translateY(${layer.y * progress}rem) translateZ(0)`
     })
   }
 

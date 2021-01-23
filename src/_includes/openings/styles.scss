@@ -2,6 +2,7 @@
   padding-top: 12rem;
   padding-bottom: 8rem;
   position: relative;
+  background: white;
 
   &::after {
     content: '';
@@ -24,12 +25,6 @@
   padding: 4rem 0;
 
   transition: opacity .5s $easeOutExpo;
-
-  .openings:hover & {
-    opacity: .5;
-  }
-
-  &:hover { opacity: 1 !important; }
 }
 
 .opening__a {
