@@ -1,0 +1,35 @@
+<section class="flyout-menu flyout">
+  <div class="flyout-menu__container container">
+    <nav class="flyout-menu__nav">
+      <a href="" class="flyout-menu__link">Services</a>
+      <a href="" class="flyout-menu__link">Careers</a>
+
+      <a
+        class="flyout-menu__link"
+        onclick="
+          classToggle('.flyout-start-project', '-open');
+          classRemove('.flyout-menu', '-open');
+          classRemove('.header', '-dark');
+        ">
+        Start a project
+      </a>
+    </nav>
+
+    <p class="flyout-menu__heading h5">Case studies</p>
+    {% include 'case-studies-list/index.html' %}
+
+
+    <p class="flyout-menu__contact flyout-menu__heading h5">Contact us</p>
+    <p class="flyout-menu__meta">
+      Szlak 77/222, <br>
+      31-153 Cracow, Poland <br><br>
+      <a href="mailto:hello@bondroy.com">hello@bondroy.com</a>
+    </p>
+
+  </div>
+</section>
+
+<style>
+  {% require_once '_ui/flyout/build/styles.css' | safe %}
+  {% require_once 'flyout-menu/build/styles.css' | safe %}
+</style>

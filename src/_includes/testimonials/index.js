@@ -48,14 +48,17 @@ function Testimonials (el) {
       case 'curr':
         el.style.transform = 'none'
         el.style.opacity = 1
+        el.classList.add('-active')
         break
       case 'next':
         el.style.transform = 'translateY(100%)'
         el.style.opacity = 1
+        el.classList.remove('-active')
         break
       case 'prev':
         el.style.transform = 'scale(.3)'
         el.style.opacity = 0
+        el.classList.remove('-active')
         break
     }
   }
@@ -66,14 +69,17 @@ function Testimonials (el) {
       case 'curr':
         el.style.transform = 'none'
         el.style.opacity = 1
+        el.classList.add('-active')
         break
       case 'next':
         el.style.transform = 'translateY(20px)'
         el.style.opacity = 0
+        el.classList.remove('-active')
         break
       case 'prev':
         el.style.transform = 'translateY(-100px)'
         el.style.opacity = 0
+        el.classList.remove('-active')
         break
     }
   }

@@ -17,7 +17,7 @@
 .cta__h {
   font-size: 7rem;
   letter-spacing: -.1rem;
-  line-height: 10rem;
+  line-height: 1.2;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -32,4 +32,54 @@
 
 .cta__button {
   margin-right: 10rem;
+}
+
+@media (max-width: 1040px) {
+
+  .cta {
+    height: auto;
+    padding: 7rem 0;
+    font-size: 2px;
+    background-position: 50% top, 50% bottom !important;
+    background-size: 24em 58.1em, 24em 58.1em !important;
+    background-repeat: repeat-x, repeat-x;
+  }
+
+  .cta__container {
+    padding: 5rem 3rem;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 100vw;
+      transform: translateX(-50%);
+      background-color: white;
+    }
+  }
+
+  .cta__h {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .cta__p {
+    padding: 0;
+    padding-right: 3rem;
+    max-width: 50%;
+    width: 210px;
+    flex-grow: initial;
+  }
+
+  .cta__button {
+    margin: 0;
+    width: 150px;
+    max-width: 35%;
+    min-width: 0;
+  }
 }

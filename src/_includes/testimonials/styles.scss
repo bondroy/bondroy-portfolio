@@ -105,3 +105,52 @@
   cursor: pointer;
 }
 
+
+@media (max-width: 1040px) {
+  .testimonials {
+    margin-top: 0;
+  }
+
+  .testimonials__item {
+    flex-wrap: wrap;
+  }
+
+  .testimonials__content {
+    padding-left: 0;
+  }
+
+  .testimonials__nav {
+    flex-wrap: wrap;
+  }
+
+  .testimonials__button {
+    width: 100%;
+    order: 2;
+    margin-top: 3rem;
+  }
+
+  .testimonials__next {
+    margin-right: auto;
+    transform: translateX(1.8rem);
+  }
+
+  .testimonials__prev {
+    margin-left: auto;
+    transform: translateX(-1.8rem);
+  }
+
+  .testimonials__img {
+    display: none;
+  }
+
+  .testimonials__content-slide {
+    // padding-left: 3.2rem;
+    // padding-right: 3.2rem;
+    opacity: 0;
+
+    &.-active {
+      opacity: 1;
+      position: relative;
+    }
+  }
+}

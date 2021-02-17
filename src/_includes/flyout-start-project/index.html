@@ -1,5 +1,12 @@
 <section class="flyout-start-project flyout" data-cursor data-cursor-scale="1">
   <div class="flyout-start-project__scroll">
+    <a
+      class="flyout-start-project__close"
+      onclick="
+        classRemove('.flyout-start-project', '-open');
+      ">
+      &times;
+    </a>
     <div class="flyout-start-project__container container">
       <h2 class="flyout-start-project__h">Let’s talk business</h2>
       <p class="flyout-start-project__p">We hoped you’d land here.</p>
@@ -7,7 +14,7 @@
       <form action="https://getform.io/f/b499db0c-dca3-476d-bedf-af8407d335a6" class="flyout-start-project__form" novalidate="true">
         <div class="flyout-start-project__line">
           <span>Hi! My name is</span>
-          <div class="flyout-start-project__field">
+          <div class="flyout-start-project__field -name">
             <input data-cursor type="text" class="flyout-start-project__field-input" placeholder="Full name *" required name="name">
             <label for="start-name" class="flyout-start-project__field-label">Full name</label>
             <div class="flyout-start-project__field-line"></div>

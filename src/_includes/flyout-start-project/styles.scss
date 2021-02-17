@@ -28,6 +28,10 @@
   }
 }
 
+.flyout-start-project__close {
+  display: none;
+}
+
 .flyout-start-project__scroll {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -212,5 +216,62 @@
   + .flyout-start-project__checkbox-label {
     background: white;
     color: black;
+  }
+}
+
+
+@media (max-width: 1040px) {
+  .flyout-start-project {
+    transform: translateX(100%);
+    background: black;
+    z-index: 1;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .flyout-start-project__scroll {
+    position: relative;
+  }
+
+
+  .flyout-start-project__close {
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    color: white;
+    padding: 2rem 3rem;
+    font-size: 2.5rem;
+  }
+
+  .flyout-start-project__scroll {
+    margin-top: 0;
+    height: 100vh;
+  }
+
+  .flyout-start-project__line span {
+    line-height: 4;
+  }
+
+  .flyout-start-project__field:not(.-name) {
+    margin: 0;
+    width: 100%;
+  }
+
+  .flyout-start-project__checkboxes {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .flyout-start-project__checkbox-label {
+    width: calc(50% - 10px);
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    margin-bottom: 2rem;
+    white-space: nowrap;
   }
 }

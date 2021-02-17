@@ -6,3 +6,10 @@
     margin-right: 3rem;
   }
 }
+
+
+@media (max-width: 1040px) {
+  .headline {
+    svg { display: none; }
+  }
+}

@@ -1,0 +1,12 @@
+<a
+  class="burger"
+  onclick="
+    classToggle('.flyout-menu', '-open');
+    classToggle('.header', '-dark', this);
+  ">
+  <span class="burger__dot -top"></span>
+  <span class="burger__dot -middle"></span>
+  <span class="burger__dot -bottom"></span>
+</a>
+
+<style>{% require_once '_ui/burger/build/styles.css' | safe %}</style>

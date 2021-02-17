@@ -111,3 +111,9 @@ $d: .8;
     .scroll-cta-line { animation-delay: ($t * $d * 4.5); }
   }
 }
+
+@media (max-width: 1040px) {
+  .hero__p {
+    padding-right: 8rem;
+  }
+}

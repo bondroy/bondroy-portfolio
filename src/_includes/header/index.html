@@ -3,6 +3,7 @@
 
   {% include 'flyout-start-project/index.html' %}
   {% include 'flyout-case-studies/index.html' %}
+  {% include 'flyout-menu/index.html' %}
 
   <div class="header__container container">
     <a href="{{ '/' | url }}" class="header__logo">
@@ -34,6 +35,8 @@
       ">
       Start a project
     </a>
+
+    {% include '_ui/burger/index.html' %}
   </div>
 </header>
 
