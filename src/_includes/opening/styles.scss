@@ -83,3 +83,23 @@
 .opening__button {
   margin-left: auto;
 }
+
+
+@media (max-width: 1040px) {
+  .opening__h {
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    font-size: 6rem;
+    line-height: 1.2;
+  }
+
+  .openinng__footer-container {
+    height: 7rem;
+  }
+
+  .opening__back {
+    strong {
+      display: none;
+    }
+  }
+}

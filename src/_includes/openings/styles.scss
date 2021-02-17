@@ -43,3 +43,22 @@
     margin: 0 2rem;
   }
 }
+
+
+@media (max-width: 1040px) {
+  .opening__a { display: none; }
+
+  .opening__p {
+    span + span::before {
+      margin: 0 1rem;
+    }
+  }
+
+  .opening {
+    padding: 3rem 0;
+  }
+
+  .openings .headline {
+    margin-bottom: 5rem;
+  }
+}

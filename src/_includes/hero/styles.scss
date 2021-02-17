@@ -113,6 +113,10 @@ $d: .8;
 }
 
 @media (max-width: 1040px) {
+  .hero.-space {
+    margin-top: 5rem;
+  }
+
   .hero__p {
     padding-right: 8rem;
   }
