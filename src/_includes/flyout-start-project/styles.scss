@@ -35,7 +35,7 @@
 .flyout-start-project__scroll {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  margin-top: 10rem;;
+  margin-top: 10rem;
   height: calc(100vh - 10rem);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -239,11 +239,12 @@
   .flyout-start-project__close {
     display: block;
     position: absolute;
-    top: 2.5rem;
-    right: 1rem;
+    top: 5rem;
+    right: 2rem;
     color: white;
-    padding: 2rem 3rem;
-    font-size: 2.5rem;
+    padding: 1rem;
+
+    svg { width: 25px; }
   }
 
   .flyout-start-project__scroll {

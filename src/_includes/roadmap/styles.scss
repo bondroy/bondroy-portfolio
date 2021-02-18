@@ -40,6 +40,7 @@
   line-height: 2.8rem;
   margin-bottom: 1rem;
   margin-top: 0;
+  color: currentColor;
 }
 
 .roadmap__item-p {
@@ -51,4 +52,30 @@
 .roadmap__bg {
   margin-top: 8rem;
   height: 68rem;
+}
+
+
+@media (max-width: 1040px) {
+  .roadmap {
+    margin-bottom: 7rem;
+
+    .headline {
+      padding-top: 5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
+
+  .roadmap__subtitle {
+    text-align: center;
+  }
+
+  .roadmap__bg {
+    background: black !important;
+    height: auto;
+  }
+
+  .roadmap__item {
+    transform: none !important;
+  }
 }

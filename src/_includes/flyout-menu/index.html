@@ -8,8 +8,10 @@
         class="flyout-menu__link"
         onclick="
           classToggle('.flyout-start-project', '-open');
-          classRemove('.flyout-menu', '-open');
-          classRemove('.header', '-dark');
+          setTimeout(function() {
+            classRemove('.flyout-menu', '-open');
+            classRemove('.header', '-dark');
+          }, 1000);
         ">
         Start a project
       </a>
