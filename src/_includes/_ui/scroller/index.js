@@ -8,6 +8,8 @@ function Scroller (scroller) {
   window.addEventListener('load', setBodyHeight)
 
   window.renderer.onUpdate((offset) => {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     skew = window.pageYOffset - offset
     skew = skew > 0
       ? Math.min(skew, 50)
@@ -16,7 +18,9 @@ function Scroller (scroller) {
   })
 
   window.renderer.onRender((offset) => {
-    scroller.scrollTop = offset
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+    // scroller.scrollTop = offset
+    scroller.style.transform = `translateY(-${offset}px)`
     // scroller.style.transform = `skew(0, ${skew}deg)`
   })
 

@@ -4,6 +4,8 @@ function Hero (el) {
   const scroll = el.querySelector('.hero__scroll')
 
   screenProgress.onProgress((progress) => {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     lines.forEach(function (line, id) {
       line.style.transform = `translateY(${-100 * (lines.length - id) * progress}px) translateZ(0)`
     })

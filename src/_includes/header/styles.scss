@@ -149,6 +149,7 @@
   .header .burger {
     display: block;
     margin-left: auto;
+    transform: translateX(.5rem);
   }
 
   .header__container {

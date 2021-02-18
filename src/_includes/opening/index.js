@@ -10,6 +10,8 @@ function OpeningFooter (el, container) {
   window.addEventListener('load', setVars)
 
   window.renderer.onUpdate((offset) => {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     scrolledToBottom = offset + window.innerHeight >= containerEnd
     if (!scrolledToBottom) {
       el.classList.remove('-bottom')
@@ -19,6 +21,8 @@ function OpeningFooter (el, container) {
   })
 
   window.renderer.onRender(() => {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     if (scrolledToBottom) {
       el.classList.add('-bottom')
     } else {

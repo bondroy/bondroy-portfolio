@@ -1,10 +1,9 @@
 .flyout {
   z-index: -1;
   position: fixed;
-  top: -.1rem;
+  top: 0;
   left: 0;
   width: 100%;
-  transform: translateY(-100%);
   transition: transform $t_flyout $easeOutExpo;
   pointer-events: none;
   cursor: initial !important;
@@ -13,4 +12,12 @@
     transform: none;
     pointer-events: all;
   }
+}
+
+@media (min-width: 1041px) {
+  .flyout {transform: translateY(-100%);}
+}
+
+@media (max-width: 1040px) {
+  .flyout {transform: translateX(100%);}
 }

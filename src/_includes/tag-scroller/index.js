@@ -11,6 +11,8 @@ function TagScroller (scroller) {
   screenProgress.onProgress(onProgress)
 
   function onProgress (progress) {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     // before
     if (progress < .2) track.style.opacity = 0
     // after

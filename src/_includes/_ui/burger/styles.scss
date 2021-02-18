@@ -20,8 +20,8 @@
   &.-middle { top: calc(50% - 3px); }
   &.-bottom { bottom: 0px; }
 
-  .burger:hover & {
-    &.-top { transform: translateY(2px); }
-    &.-bottom { transform: translateY(-2px); }
-  }
+  // .burger:hover & {
+  //   &.-top { transform: translateY(2px); }
+  //   &.-bottom { transform: translateY(-2px); }
+  // }
 }

@@ -4,6 +4,8 @@ document.querySelectorAll('.case-study').forEach(function (study, id) {
   const screenProgress = new ScreenProgress(study)
 
   screenProgress.onProgress((progress) => {
+    if (window.matchMedia('(max-width: 1040px)').matches) return
+
     img.style.transform = `translateY(-80vh) translateY(${150 * progress}vh) translateZ(0) scale(1.2)`
 
     if (progress < .3 || progress >= .8) {

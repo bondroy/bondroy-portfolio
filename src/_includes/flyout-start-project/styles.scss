@@ -39,7 +39,7 @@
   height: calc(100vh - 10rem);
   overflow-y: scroll;
   overflow-x: hidden;
-  overscroll-behavior: none;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
@@ -233,6 +233,7 @@
 
   .flyout-start-project__scroll {
     position: relative;
+    padding-bottom: 15rem;
   }
 
 
