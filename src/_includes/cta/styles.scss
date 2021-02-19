@@ -39,8 +39,8 @@
   .cta {
     height: auto;
     padding: 7rem 0;
-    font-size: 2px;
-    background-position: 50% top, 50% bottom !important;
+    font-size: .65rem;
+    background-position: 19% top, 19% bottom !important;
     background-size: 24em 58.1em, 24em 58.1em !important;
     background-repeat: repeat-x, repeat-x;
   }
@@ -48,6 +48,7 @@
   .cta__container {
     padding: 5rem 3rem;
     position: relative;
+    max-width: 40rem;
     z-index: 0;
 
     &::before {
@@ -71,15 +72,22 @@
   .cta__p {
     padding: 0;
     padding-right: 3rem;
-    max-width: 50%;
-    width: 210px;
+    max-width: 55%;
+    width: 21rem;
     flex-grow: initial;
   }
 
   .cta__button {
     margin: 0;
-    width: 150px;
+    width: 15rem;
     max-width: 35%;
     min-width: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .cta {
+    font-size: 4px;
   }
 }
