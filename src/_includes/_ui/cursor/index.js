@@ -4,15 +4,15 @@ function Cursor (el) {
   const cords       = { x: 0, y: 0 }
   const skew        = { x: 0, y: 0 }
   const speed = .2
-  let targetScale = 1
-  let scale = 1
+  let targetScale = .1
+  let scale = .1
 
   targets.forEach(target => {
     target.addEventListener('mouseover', onTargetMouseEnter)
     target.addEventListener('mouseout', onTargetMouseLeave)
   })
   window.addEventListener('mousemove', onMouseMove)
-  document.addEventListener('mouseenter', () => { targetScale = 1 })
+  document.addEventListener('mouseenter', () => { targetScale = .1 })
   document.addEventListener('mouseleave', () => { targetScale = 0 })
   window.renderer.onUpdate(onUpdate)
   window.renderer.onRender(onRender)
@@ -25,13 +25,13 @@ function Cursor (el) {
   function onTargetMouseEnter (e) {
     e.stopPropagation()
     targetScale = e.currentTarget.dataset.cursorScale || e.currentTarget.offsetHeight / 10
-    targetScale = Number(targetScale)
+    targetScale = Number(targetScale) / 10
     el.style.filter = 'invert(1)'
     el.style.mixBlendMode = 'exclusion'
   }
 
   function onTargetMouseLeave (e) {
-    targetScale = 1
+    targetScale = 1 / 10
     el.style.filter = ''
     el.style.mixBlendMode = ''
   }

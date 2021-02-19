@@ -7,6 +7,7 @@ function Header (el) {
   let headerOffset
 
   window.renderer.onUpdate((offset) => {
+    if (offset < 0) return
     headerOffset = Math.min(offset - lastOverflowOffset, headerHeight)
     headerOffset = Math.max(headerOffset, 0)
 
