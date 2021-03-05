@@ -7,15 +7,15 @@ function Scroller (scroller) {
   window.addEventListener('resize', setBodyHeight)
   window.addEventListener('load', setBodyHeight)
 
-  window.renderer.onUpdate((offset) => {
-    if (window.matchMedia('(max-width: 1040px)').matches) return
+  // window.renderer.onUpdate((offset) => {
+  //   if (window.matchMedia('(max-width: 1040px)').matches) return
 
-    skew = window.pageYOffset - offset
-    skew = skew > 0
-      ? Math.min(skew, 50)
-      : Math.max(skew, -50)
-    skew = skew / 20
-  })
+  //   skew = window.pageYOffset - offset
+  //   skew = skew > 0
+  //     ? Math.min(skew, 50)
+  //     : Math.max(skew, -50)
+  //   skew = skew / 20
+  // })
 
   window.renderer.onRender((offset) => {
     if (window.matchMedia('(max-width: 1040px)').matches) return
