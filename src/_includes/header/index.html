@@ -1,3 +1,11 @@
+<style>
+  {% require_once 'header/build/styles.css' | safe %}
+
+  .{{ menu_item }}::after {
+    width: calc(100% - 6rem);
+  }
+</style>
+
 <header class="header">
   <div class="header__bg"></div>
 
@@ -39,14 +47,6 @@
     {% include '_ui/burger/index.html' %}
   </div>
 </header>
-
-<style>
-  {% require_once 'header/build/styles.css' | safe %}
-
-  .{{ menu_item }}::after {
-    width: calc(100% - 6rem);
-  }
-</style>
 
 <script>
   {% require_once '_ui/scroll-toggle/build/index.js' | safe %}

@@ -19,6 +19,10 @@ module.exports = (config) => {
     return fs.readFileSync(`${process.cwd()}/src/_includes/${path}`, 'utf8')
   })
 
+  config.addFilter('proton', function(value) {
+    return 'https://i2.wp.com/bondroy-site.loudnow.vercel.app' + value
+  })
+
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,

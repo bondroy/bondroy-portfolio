@@ -1,3 +1,9 @@
+<style>
+  {% require_once '_ui/flyout/build/styles.css' | safe %}
+  {% require_once '_ui/button/build/styles.css' | safe %}
+  {% require_once 'flyout-start-project/build/styles.css' | safe %}
+</style>
+
 <section class="flyout-start-project flyout" data-cursor data-cursor-scale="1">
   <div class="flyout-start-project__scroll">
     <a
@@ -102,8 +108,3 @@
   new StartProject(document.querySelector('.flyout-start-project__container'))
 </script>
 
-<style>
-  {% require_once '_ui/flyout/build/styles.css' | safe %}
-  {% require_once '_ui/button/build/styles.css' | safe %}
-  {% require_once 'flyout-start-project/build/styles.css' | safe %}
-</style>

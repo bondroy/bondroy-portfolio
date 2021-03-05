@@ -4,7 +4,7 @@
     {% include '_ui/headline/index.html' %}
 
     {% for opening in openings %}
-    <a href="/careers/{{ opening.title | slug }}/" class="opening">
+    <a href="{{ '/careers/' ~ opening.title | slug | url }}/" class="opening">
       <h4 class="opening__h">{{ opening.title }}</h4>
       <span class="opening__a">
         <strong>See more</strong>
