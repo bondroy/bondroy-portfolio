@@ -51,7 +51,7 @@ function Testimonials (el) {
         el.classList.add('-active')
         break
       case 'next':
-        el.style.transform = 'translateY(100%)'
+        el.style.transform = 'translateX(100%)'
         el.style.opacity = 1
         el.classList.remove('-active')
         break
@@ -72,12 +72,12 @@ function Testimonials (el) {
         el.classList.add('-active')
         break
       case 'next':
-        el.style.transform = 'translateY(20px)'
+        el.style.transform = 'translateX(2rem)'
         el.style.opacity = 0
         el.classList.remove('-active')
         break
       case 'prev':
-        el.style.transform = 'translateY(-100px)'
+        el.style.transform = 'translateX(-5rem)'
         el.style.opacity = 0
         el.classList.remove('-active')
         break
