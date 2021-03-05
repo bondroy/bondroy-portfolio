@@ -141,10 +141,11 @@
   .service__text {
     max-width: 100%;
     justify-content: center;
-    text-align: center;
+    // text-align: center;
   }
 
   .service__list {
+    width: 100%;
     li { padding: 0.5rem 0; }
   }
 
