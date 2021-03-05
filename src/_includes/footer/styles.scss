@@ -22,6 +22,7 @@
     .footer__col:last-child {
       width: 20rem;
     }
+    .-privacy {  display: none; }
   }
 
   &.-last {
@@ -86,6 +87,11 @@
         display: flex;
         justify-content: center;
       }
+
+      .-privacy {
+        margin-top: 7rem;
+        display: block;
+      }
     }
 
     &.-last {
@@ -95,6 +101,7 @@
       .footer__col:last-child {
         width: auto;
       }
+      .-privacy {  display: none; }
     }
 
     .-meta {
