@@ -11,6 +11,7 @@
   font-weight: bold;
   appearance: none;
   white-space: nowrap;
+  transition: all .3s ease;
 
   span + svg {
     margin-left: 1.5rem;
@@ -21,5 +22,16 @@
     color: #191919;
     border: .2rem solid #191919;
     background: white;
+  }
+
+  &.-light {
+    color: #191919;
+    border: .2rem solid white;
+    background: white;
+
+    &:hover {
+      color: white;
+      background: rgba(255,255,255, 0);
+    }
   }
 }

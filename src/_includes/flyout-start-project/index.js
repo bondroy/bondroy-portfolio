@@ -1,5 +1,7 @@
 function StartProject (el) {
   const form = el.querySelector('form')
+  const containerThx = el.querySelector('.flyout-start-project__container.-thx')
+  const containerForm = el.querySelector('.flyout-start-project__container.-form')
   const requiredInputs = form.querySelectorAll('[required]')
 
   form.addEventListener('submit', handleSubmit)
@@ -41,12 +43,15 @@ function StartProject (el) {
       method: 'POST',
       body: new FormData(form)
     })
-    .then(() => form.remove())
+    .then(showThx)
     .catch(error => console.log(error))
   }
-}
 
-// return true if in range, otherwise false
-function inRange(x, min, max) {
-  return ((x-min)*(x-max) <= 0);
+  function showThx () {
+    const name = form.querySelector('[name=name]').value
+    el.querySelector('[data-thx-name]').innerText = name
+
+    containerForm.classList.remove('-active')
+    containerThx.classList.add('-active')
+  }
 }

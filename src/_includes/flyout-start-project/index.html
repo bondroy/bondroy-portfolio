@@ -21,7 +21,10 @@
       </svg>
 
     </a>
-    <div class="flyout-start-project__container container">
+    <div class="flyout-start-project__container -thx container">
+      {% include 'thx-msg/index.html' %}
+    </div>
+    <div class="flyout-start-project__container -form -active container">
       <h2 class="flyout-start-project__h">Let’s talk business</h2>
       <p class="flyout-start-project__p">We hoped you’d land here.</p>
 
@@ -105,6 +108,6 @@
 
 <script>
   {% require_once 'flyout-start-project/build/index.js' | safe %}
-  new StartProject(document.querySelector('.flyout-start-project__container'))
+  new StartProject(document.querySelector('.flyout-start-project'))
 </script>
 
