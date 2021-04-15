@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+.studies-scope__col {
+  padding: 0 2rem;
+}
+
 .studies-scope__name {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -20,6 +24,13 @@
 }
 
 @media (max-width: 1040px) {
+  .studies-scope__grid {
+    flex-wrap: wrap;
+  }
+
+  .studies-scope__col {
+    width: 50%;
+  }
 }
 
 @media (max-width: 600px) {

@@ -54,6 +54,30 @@
 }
 
 @media (max-width: 1040px) {
+  .studies-aside {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .studies-aside__grid {
+    flex-direction: column;
+  }
+
+  .studies-aside__col {
+    &.-text {
+      max-height: none;
+      margin-top: 3.5rem;
+    }
+
+    &.-img {
+      order: -1;
+      padding: 0 !important;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 600px) {

@@ -16,6 +16,17 @@
 }
 
 @media (max-width: 1040px) {
+  .studies-desc__grid {
+    flex-direction: column;
+  }
+
+  .studies-desc__col {
+    & + & { margin-top: 3.5rem; }
+  }
+
+  .studies-desc__name {
+    margin-bottom: 0rem;
+  }
 }
 
 @media (max-width: 600px) {

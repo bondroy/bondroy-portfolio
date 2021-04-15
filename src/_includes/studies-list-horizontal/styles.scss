@@ -55,6 +55,19 @@
 }
 
 @media (max-width: 1040px) {
+  .studies-list-horizontal {
+    margin-bottom: 10rem;
+  }
+
+  .studies-list-horizontal__grid {
+    flex-direction: column;
+  }
+
+  .studies-list-horizontal__h {
+    &::before {
+      margin-right: 2.5rem;
+    }
+  }
 }
 
 @media (max-width: 600px) {

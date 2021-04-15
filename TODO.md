@@ -1,9 +1,12 @@
 [x] fatih study desktop
-[] fatih linking
+[x] fatih linking
 
 fatih study mobile
+case studies header
+case studies list
 favicons
-explicit images sizes
-start project click grow dot
+
 services slower parallax
+start project click grow dot
 lazy load images
+explicit images sizes

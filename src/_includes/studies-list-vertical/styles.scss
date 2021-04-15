@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   align-self: flex-start;
 
   &::before {
@@ -53,6 +54,22 @@
 }
 
 @media (max-width: 1040px) {
+  .studies-list-vertical {
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+
+  .studies-list-vertical__grid {
+    flex-direction: column;
+  }
+
+  .studies-list-vertical__number {
+    align-self: center;
+
+    &::before {
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: 600px) {
