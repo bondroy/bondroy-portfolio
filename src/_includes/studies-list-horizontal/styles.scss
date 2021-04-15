@@ -36,7 +36,7 @@
 
   &::before {
     counter-increment: list-horizontal;
-    content: counter(list-horizontal, decimal-leading-zero);
+    content: counter(list-horizontal);
     display: flex;
     align-items: center;
     justify-content: center;

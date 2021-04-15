@@ -1,0 +1,18 @@
+<div class="studies-list-vertical">
+  <div class="studies-list-vertical__container container">
+    {% for item in studies_list_vertical__items %}
+    <div class="studies-list-vertical__grid">
+      <div class="studies-list-vertical__number"></div>
+      <div class="studies-list-vertical__col">
+        <span class="studies-list-vertical__tag">{{ item['tag'] }}</span>
+        <h5 class="studies-list-vertical__h">{{ item['h'] }}</h5>
+        <p class="studies-list-vertical__p">{{ item['p'] }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-list-vertical/build/styles.css' | safe %}
+</style>
