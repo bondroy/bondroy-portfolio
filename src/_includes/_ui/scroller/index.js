@@ -1,27 +1,38 @@
 function Scroller (scroller) {
   const body = document.body
-  let skew
+
+  // Check for DOM changes and reapply setBodyHeight
+  const docObserver = new MutationObserver(debounce(setBodyHeight, 50))
+
+  docObserver.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  })
 
   setBodyHeight()
   window.addEventListener('DOMContentLoaded', setBodyHeight)
   window.addEventListener('resize', setBodyHeight)
   window.addEventListener('load', setBodyHeight)
 
-  // window.renderer.onUpdate((offset) => {
-  //   if (window.matchMedia('(max-width: 1040px)').matches) return
 
-  //   skew = window.pageYOffset - offset
-  //   skew = skew > 0
-  //     ? Math.min(skew, 50)
-  //     : Math.max(skew, -50)
-  //   skew = skew / 20
-  // })
+  function debounce(func, wait, immediate = true) {
+    let timeout
+    return function() {
+      const context = this, args = arguments;
+      const later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
 
   window.renderer.onRender((offset) => {
     if (window.matchMedia('(max-width: 1040px)').matches) return
-    // scroller.scrollTop = offset
     scroller.style.transform = `translateY(-${offset}px)`
-    // scroller.style.transform = `skew(0, ${skew}deg)`
   })
 
   function setBodyHeight () {

@@ -1,0 +1,35 @@
+.studies-step {
+  padding-top: 7rem;
+  text-align: center;
+
+  & ~ & {
+    margin-top: 7rem;
+  }
+}
+
+.studies-step__h {
+  position: relative;
+
+  &::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #778699;
+    opacity: .1;
+    font-size: 11rem;
+  }
+}
+
+.studies-step__p {
+  color: #778699;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 600px) {
+}

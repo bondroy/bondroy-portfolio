@@ -1,0 +1,22 @@
+.studies-desc {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.studies-desc__grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.studies-desc__name {
+  text-transform: uppercase;
+  color: #778699;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 600px) {
+}

@@ -1,0 +1,16 @@
+<div class="studies-list-horizontal">
+  <div class="studies-list-horizontal__container container">
+    <div class="studies-list-horizontal__grid">
+      {% for item in studies_list_horizontal__items %}
+      <div class="studies-list-horizontal__col">
+        <h5 class="studies-list-horizontal__h">{{ item['h'] }}</h5>
+        <p class="studies-list-horizontal__p">{{ item['p'] }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-list-horizontal/build/styles.css' | safe %}
+</style>

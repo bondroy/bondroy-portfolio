@@ -1,0 +1,12 @@
+<div class="studies-step">
+  <div class="studies-step__container container">
+    {% if studies_step__h %}
+    <h4 class="studies-step__h">{{ studies_step__h }}</h4>
+    {% endif %}
+    <p class="studies-step__p">{{ studies_step__p | nl2br | safe }}</p>
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-step/build/styles.css' | safe %}
+</style>

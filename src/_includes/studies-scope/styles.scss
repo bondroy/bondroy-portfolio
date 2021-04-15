@@ -1,0 +1,26 @@
+.studies-scope {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.studies-scope__grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.studies-scope__name {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.studies-scope__value {
+  color: #778699;
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 600px) {
+}

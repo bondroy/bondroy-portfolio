@@ -1,0 +1,23 @@
+<div class="studies-scope">
+  <div class="studies-scope__container container">
+    <div class="studies-scope__grid">
+      {% for scope in studies_scope %}
+      <div class="studies-scope__col">
+        <img
+          class="fatih__img-logo"
+          src="{{ '/img/'~ scope['icon'] ~'@1x.jpg' | url | proton }}"
+          srcset="
+            {{ '/img/'~ scope['icon'] ~'@1x.jpg' | url | proton }} 1x,
+            {{ '/img/'~ scope['icon'] ~'@2x.jpg' | url | proton }} 2x,
+          ">
+        <div class="studies-scope__name">{{ scope['h'] }}</div>
+        <div class="studies-scope__value">{{ scope['p'] }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-scope/build/styles.css' | safe %}
+</style>

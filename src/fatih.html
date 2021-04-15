@@ -5,5 +5,544 @@ title: Fatih
 {% extends 'page.html' %}
 
 {% block body %}
+  {% set studies_header__logo = '_svgs/logo-fatih.svg' %}
+  {% set studies_header__h = 'Making business to business efortless' %}
+  {% set studies_header__p = 'Revolutionary B2B e-commerce platform' %}
+  {% include 'studies-header/index.html' %}
 
+  <div class="container">
+    <img
+      class="fatih__img-main"
+      src="{{ '/img/fatih-main@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-main@0,5x.jpg' | url | proton }} 500w,
+        {{ '/img/fatih-main@1x.jpg' | url | proton }} 1000w,
+        {{ '/img/fatih-main@2x.jpg' | url | proton }} 2000w,
+      ">
+    <style>
+      .fatih__img-main {
+        max-width: 110%;
+        width: 100vw;
+        transform: translateX(-9%);
+      }
+    </style>
+  </div>
+
+  {% set studies_desc__client = 'Armatx' %}
+  {% set studies_desc__project = 'iFATIH' %}
+  {% set studies_desc__role = 'PRODUCT DESIGN & STRATEGY' %}
+  {% set studies_desc__year = '2020-21' %}
+  {% include 'studies-desc/index.html' %}
+
+
+  <style>
+    body { counter-reset: step; }
+  </style>
+  {% set studies_step__h = 'About iFATIH' %}
+  {% set studies_step__p = '
+    iFATIH converts real business to business experience into a friendly online platform.
+    It allows users to buy and even sell their goods.
+    The whole project can be divided into two main modules - Marketplace and Managing Application.
+    There are a lot of big features coming helping business owners (not only!)
+    experience the platform in a time saving and effortless way.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-logo"
+      src="{{ '/img/fatih-logo@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-logo@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-logo@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-logo {
+        margin: 6rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+
+  {% set studies_step__h = 'Scope of work' %}
+  {% set studies_step__p = '
+    We helped and are constantly helping to deliver design & strategy solutions
+    for whole iFATIH product and admin panel to rule the product conveniently.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  {% set studies_scope = [
+    {
+      icon: 'fatih-research-icon',
+      h: 'Research',
+      p: 'Research description'
+    },
+    {
+      icon: 'fatih-strategy-icon',
+      h: 'Strategy',
+      p: 'Strategy description'
+    },
+    {
+      icon: 'fatih-ux-design-icon',
+      h: 'UX Design',
+      p: 'UX Design description'
+    },
+    {
+      icon: 'fatih-ui-design-icon',
+      h: 'UI Design',
+      p: 'UI Design description'
+    }
+  ] %}
+  {% include 'studies-scope/index.html' %}
+
+
+  {% set studies_step__h = 'Project timeline' %}
+  {% set studies_step__p = '
+    From the very beginning, we all knew this is going to be an exciting, yet challenging journey.
+    The client came with a lot of valuable ideas in mind. Our goal was to guide him through the
+    whole process, shape MVP, and help release the product.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-timeline"
+      src="{{ '/img/fatih-timeline@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-timeline@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-timeline@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-timeline {
+        max-width: none;
+        transform: translateX(-3rem);
+        width: calc(100% + 3rem);
+        margin: 10rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+
+  {% set studies_step__h = 'Project goals' %}
+  {% set studies_step__p = '
+    Our goal was to create an intuitive, user-friendly product which would really help and
+    connect business owners and their customers fulfilling the client’s vision.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+
+  {% set studies_list_horizontal__items = [
+    {
+      h: 'Time saving',
+      p: 'We all know business owners don’t have time to waste and they need fast and flexible solutions so providing a tool which saves their time sounds essential.'
+    },
+    {
+      h: 'Effortless',
+      p: 'Effortless experience is the thought which guided us throughout the project. Combining it with time saving approach makes perfect business mixture.'
+    },
+    {
+      h: 'Reliable',
+      p: 'As a platform which builds business to business relations and includes payment systems, having users trust becomes another very important goal.'
+    }
+  ] %}
+  {% include 'studies-list-horizontal/index.html' %}
+
+
+  {% set studies_step__h = 'Research & Discovery' %}
+  {% set studies_step__p = '
+    Main goal of the research was to gather information about e-commerce market in Turkey as this would be the first market
+    where iFATIH will start. We investigated the topic having b2b in mind, conducting desk research, competitive analysis,
+    user surveys and interviews which allowed us to build user flows and wirefames. We present a fraction of the results below.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  {% set studies_aside__width = '38' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-research-1' %}
+  {% set studies_aside__h = 'The e-commerce market in Turkey' %}
+  {% set studies_aside__p = '
+    Turkey is the 20th largest market for eCommerce with a revenue of US$7.9 billion in 2019 and US$11.3 in 2020.
+
+    With an increase of 24%, the Turkish e-commerce market contributed to the worldwide growth rate of 17% in 2019. Revenues for e-commerce continue to increase. New markets are emerging, and existing markets also have the potential for further development. Global growth will continue over the next few years.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '38' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-research-2' %}
+  {% set studies_aside__h = 'Market size and growth rate' %}
+  {% set studies_aside__p = '
+    Market expansion in Turkey is expected to continue over the next few years. According to the Statista Digital Market Outlook, it has been predicted that for the next four years the compound annual growth rate will be 28%.
+
+    Past year-over-year growth was 24% which means the market is not yet saturated and still has growth potential. 40% of the Turkish population have bought at least one product online in 2019 which is indicates growth potential as well.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '38' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-research-3' %}
+  {% set studies_aside__h = 'Top market segments' %}
+  {% set studies_aside__p = '
+  Fashion is the largest segment in in Turkey and accounts for 42% of the e-commerce revenue in Turkey.
+
+  This is followed by Electronics & Media with 22%, Toys, Hobby & DIY with 18%, Furniture & Appliances with 11% and Food & Personal Care with the remaining 7%.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '54' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-research-4' %}
+  {% set studies_aside__h = 'Defining the scope' %}
+  {% set studies_aside__p = '
+  Defining the scope was one of the most challenging part of the whole project. The client had a lot of features in mind with a perfectly pictured vision. We focused on crucial business and user needs, prioritizing them, and then shaping them into a product that can be implemented in a reasonable time.
+
+  On the left side, there are some of the key features presented to rougly visualize what was defined. Obviously, we don’t cover every feature here, only basic just to to give an idea what the final scope looks like and how huge potential there is for the product to grow.
+
+  We have two areas for users’ and business needs. They have their own priorities and they overlap together to create released scope.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+
+  {% set studies_step__h = 'Personas' %}
+  {% set studies_step__p = '
+    To have better understanding of the future users, their needs and motiviations we have
+    created 2 personas. We present the main one below.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-personas"
+      src="{{ '/img/fatih-personas@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-personas@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-personas@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-personas {
+        width: 100%;
+        margin: 8rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+  {% set studies_step__h = 'User flows' %}
+  {% set studies_step__p = '
+    On the stage we’ve focused on keeping user journey smooth, pleasant and on top of that - effortless.
+    There were a lot of flows created and to optimise your experience we present just a part of disputing flow.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <img
+    class="fatih__img-flowchart"
+    src="{{ '/img/fatih-flowchart@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-flowchart@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-flowchart@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-flowchart {
+      width: 100%;
+      margin: 8rem auto -50rem auto;
+    }
+  </style>
+
+  {% set studies_step__h = 'General structure' %}
+  {% set studies_step__p = '
+    We defined two types of users, Buyer, Seller. Obviously, Seller can also buy products.
+    The whole project contains two main modules, Marketplace and Managing Application.
+    Apart from that, there is also Admin Panel which we have also created.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-structure"
+      src="{{ '/img/fatih-structure@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-structure@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-structure@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-structure {
+        width: 100%;
+        margin: 8rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+  {% set studies_step__h = 'Wireflames' %}
+  {% set studies_step__p = '
+    We’ve created a lot of wireframes, which allowed us to conduct user testing sessions.
+    After a few rounds, we could move forward to the UI design phase with no doubts that
+    users will find the final product useful.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <img
+    class="fatih__img-wireflames"
+    src="{{ '/img/fatih-wireflames@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-wireflames@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-wireflames@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-wireflames {
+      width: 100%;
+      margin: 8rem auto 0 auto;
+    }
+  </style>
+
+
+  {% set studies_step__h = 'Branding' %}
+  {% set studies_step__p = '
+    Along with wireframes we were working on visual iFATIH representation, starting from branding to
+    state fundamental principles which will later affect whole digital product look and feel.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <img
+    class="fatih__img-branding"
+    src="{{ '/img/fatih-branding@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-branding@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-branding@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-branding {
+      width: 100%;
+      margin: 8rem auto 0 auto;
+    }
+  </style>
+
+  {% set studies_step__h = 'Design System' %}
+  {% set studies_step__p = '
+    Based on core iFATIH assumptions, previously established wireframes and user testing sessions, we have built a whole
+    dedicated design system to meet future usage, flexibility and scale requirements.
+
+
+    iFATIH is supposed to be professional, attractive, and unique. Black and white combinations, supported by Orange Red
+    accents were chosen to meet those assumptions.
+    To make sure the user’s Orders will be properly distinctive, supportive colours were also needed.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-colors"
+      src="{{ '/img/fatih-colors@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-colors@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-colors@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-colors {
+        transform: translateX(-3rem);
+        width: calc(100% + 3rem);
+        margin: 8rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+  {% set studies_step__h = '' %}
+  {% set studies_step__p = '
+    Project uses only one typeface to maintain professional character,
+    follow minimalism rules and to keep best performance.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-fonts"
+      src="{{ '/img/fatih-fonts@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-fonts@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-fonts@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-fonts {
+        transform: translateX(-3rem);
+        width: calc(100% + 3rem);
+        margin: 8rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+  {% set studies_step__h = '' %}
+  {% set studies_step__p = '
+    Components were built from scratch, not only to care about every pixel but to maintain consistency
+    across whole platform. Chosing React as a main front-end technology makes it optimal to develop.
+    Here is just a sample of still growing massive library.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <div class="container">
+    <img
+      class="fatih__img-components"
+      src="{{ '/img/fatih-components@1x.jpg' | url | proton }}"
+      srcset="
+        {{ '/img/fatih-components@1x.jpg' | url | proton }} 1x,
+        {{ '/img/fatih-components@2x.jpg' | url | proton }} 2x,
+      ">
+    <style>
+      .fatih__img-components {
+        transform: translateX(-3rem);
+        width: calc(100% + 3rem);
+        margin: 8rem auto 0 auto;
+      }
+    </style>
+  </div>
+
+  {% set studies_step__h = 'Released product' %}
+  {% set studies_step__p = '
+    Whole project contains almost 300 screens only for desktop resolutions and is still growing.
+    Here are some of them and major features walkthrough.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <img
+    class="fatih__img-product"
+    src="{{ '/img/fatih-product@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-product@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-product@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-product {
+      width: 100%;
+      margin: 8rem auto 0 auto;
+    }
+  </style>
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-product-1' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Dashboard for both
+    Buyer and Seller' %}
+  {% set studies_aside__p = '
+    A proper place to browse user’s past activity, review stats which are extremelly important especially for Sellers.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-product-2' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Sending and receiving offers' %}
+  {% set studies_aside__p = '
+    Before an order can be processed, Buyer needs to send the offer so Seller can review, and then accept, reject or counter-offer. This can go back and forth until they reach an agreement.
+
+    iFATIH gives its users freedom to guide them through process and let them include further, typical for b2b details.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-product-3' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Managing purchases and sells' %}
+  {% set studies_aside__p = '
+    Once Buyer and Seller reach an agreement and Buyer will make a payment, offer goes to either Purchased or Sold and becomes the order processed by Seller.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-product-4' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Disputing' %}
+  {% set studies_aside__p = '
+    iFATIH supports every transaction and gives its users ability to dispute when something goes not as planned.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-product-5' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Adding or importing a product' %}
+  {% set studies_aside__p = '
+    Crucial place for every Seller where he can add and configure every product he wants to sell.
+
+    There are also shareable parameters and documents modules to share documentation mandatory for B2B transactions.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-product-6' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Messaging' %}
+  {% set studies_aside__p = '
+    iFATIH users can exchange messages even before placing an offer and later on as well.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '28' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-product-7' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Managing cards & profile' %}
+  {% set studies_aside__p = '
+    For easier and more convenient payments, user can save and re-use his debit and credits cards.
+
+    User can sign up as a Buyer only or as a Seller and he can buy as well.  Buyer can always transform his account to Seller but he needs to provide his company details. 
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-right' %}
+  {% set studies_aside__img = 'fatih-product-8' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Marketplace' %}
+  {% set studies_aside__p = '
+    Great place to start iFATIH adventure. Browse through tons of different type of products, sent and receive offers, contact Sellers and pay for your transactions.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  {% set studies_aside__width = '35' %}
+  {% set studies_aside__side = '-left' %}
+  {% set studies_aside__img = 'fatih-product-9' %}
+  {% set studies_aside__tag = 'MAIN FEATURES' %}
+  {% set studies_aside__h = 'Reviews' %}
+  {% set studies_aside__p = '
+    Users can leave their reviews after finished transaction. Buyers and Sellers can build their network based on past transaction results. It gives credibility and increases the quality of their business partners.
+  ' %}
+  {% include 'studies-aside/index.html' %}
+
+  <img
+    class="fatih__img-mobile"
+    src="{{ '/img/fatih-mobile@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-mobile@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-mobile@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-mobile {
+      width: 100%;
+      margin: 8rem auto 0 auto;
+    }
+  </style>
+
+  {% set studies_step__h = 'Challenges' %}
+  {% set studies_step__p = '
+    When reviewing the project we’ve identified the most important challenges
+    we and the client experienced.
+  ' %}
+  {% include 'studies-step/index.html' %}
+
+  <img
+    class="fatih__img-dashboard"
+    src="{{ '/img/fatih-dashboard@1x.jpg' | url | proton }}"
+    srcset="
+      {{ '/img/fatih-dashboard@1x.jpg' | url | proton }} 1x,
+      {{ '/img/fatih-dashboard@2x.jpg' | url | proton }} 2x,
+    ">
+  <style>
+    .fatih__img-dashboard {
+      width: 100%;
+      margin: 8rem auto 0 auto;
+    }
+  </style>
 {% endblock %}

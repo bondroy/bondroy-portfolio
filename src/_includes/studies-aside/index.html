@@ -1,0 +1,23 @@
+<div class="studies-aside {{ studies_aside__side }}">
+  <div class="studies-aside__container container">
+    <div class="studies-aside__grid">
+      <div class="studies-aside__col -text" style="max-width: {{ studies_aside__width }}rem;">
+        <h5 class="studies-aside__h">{{ studies_aside__h }}</h5>
+        <p class="studies-aside__p">{{ studies_aside__p | nl2br | safe }}</p>
+      </div>
+      <div class="studies-aside__col -img">
+        <img
+          class="studies-aside__img"
+          src="{{ '/img/'~ studies_aside__img ~'@1x.jpg' | url | proton }}"
+          srcset="
+            {{ '/img/'~ studies_aside__img ~'@1x.jpg' | url | proton }} 1x,
+            {{ '/img/'~ studies_aside__img ~'@2x.jpg' | url | proton }} 2x,
+          ">
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-aside/build/styles.css' | safe %}
+</style>

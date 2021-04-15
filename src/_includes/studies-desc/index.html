@@ -1,0 +1,26 @@
+<div class="studies-desc">
+  <div class="studies-desc__container container">
+    <div class="studies-desc__grid">
+      <div class="studies-desc__col">
+        <div class="studies-desc__name">Client</div>
+        <div class="studies-desc__value">{{ studies_desc__client }}</div>
+      </div>
+      <div class="studies-desc__col">
+        <div class="studies-desc__name">Project</div>
+        <div class="studies-desc__value">{{ studies_desc__project }}</div>
+      </div>
+      <div class="studies-desc__col">
+        <div class="studies-desc__name">Role</div>
+        <div class="studies-desc__value">{{ studies_desc__role }}</div>
+      </div>
+      <div class="studies-desc__col">
+        <div class="studies-desc__name">Year</div>
+        <div class="studies-desc__value">{{ studies_desc__year }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'studies-desc/build/styles.css' | safe %}
+</style>

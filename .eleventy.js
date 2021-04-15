@@ -6,10 +6,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('js')
 
   let required = {}
-
-  config.on('beforeBuild', () => {
-    required =  {}
-  })
+  config.on('beforeBuild', () => { required =  {} })
 
   config.addShortcode('require_once', function(path) {
     const slug = this.page.outputPath
@@ -20,7 +17,8 @@ module.exports = (config) => {
   })
 
   config.addFilter('proton', function(value) {
-    return 'https://i2.wp.com/bondroy-site.loudnow.vercel.app' + value
+    return value
+    // return 'https://i2.wp.com/bondroy-site.loudnow.vercel.app' + value
   })
 
   config.setBrowserSyncConfig({
@@ -31,7 +29,6 @@ module.exports = (config) => {
   config.setDataDeepMerge(true)
 
   return {
-    // pathPrefix: 'bondroy',
     htmlTemplateEngine: 'njk',
     dir: {
       input: 'src',
