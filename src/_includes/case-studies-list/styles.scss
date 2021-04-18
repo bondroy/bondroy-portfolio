@@ -17,6 +17,10 @@
   font-size: 1.7rem;
   color: #FFFFFF;
   line-height: 2.4rem;
+
+  .-soon & {
+    // opacity: .5;
+  }
 }
 
 .case-studies-list__item-logo {
@@ -28,4 +32,9 @@
 
 .case-studies-list__item-p {
   margin-top: 1.5rem;
+}
+
+.case-studies-list__item-soon {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
 }

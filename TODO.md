@@ -1,6 +1,7 @@
 [x] fatih study desktop
 [x] fatih linking
 [x] fatih study mobile
+[x] favicons
 
 case studies header
 case studies list
@@ -8,7 +9,6 @@ testimonials overlay
 let us know button click
 button hovers
 lucas footer info
-favicons
 services slower parallax
 services border bottom
 opening - no current openings
