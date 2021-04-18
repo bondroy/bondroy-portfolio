@@ -3,8 +3,8 @@
 [x] fatih study mobile
 [x] favicons
 [x] case studies header
+[x] dynamic date footer
 
-dynamic date footer
 testimonials overlay
 
 case studies list
