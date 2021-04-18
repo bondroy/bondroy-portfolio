@@ -1,0 +1,1 @@
+"use strict";module.exports={currentYear:function(){return(new Date).getFullYear()}};

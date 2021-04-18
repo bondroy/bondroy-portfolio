@@ -2,17 +2,17 @@
 [x] fatih linking
 [x] fatih study mobile
 [x] favicons
+[x] case studies header
 
-case studies header
-case studies list
+dynamic date footer
 testimonials overlay
+
+case studies list
 let us know button click
 button hovers
-lucas footer info
 services slower parallax
 services border bottom
 opening - no current openings
-dynamic date footer
 mobile missing images
 
 start project click grow dot
