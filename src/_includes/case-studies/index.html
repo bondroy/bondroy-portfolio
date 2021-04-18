@@ -1,28 +1,37 @@
+{% set studies = [
+  {
+    image: '/img/home-study-1.jpg',
+    logo: '_svgs/logo-fatih.svg',
+    title: 'Revolutionary b2b
+      e&#8209;commerce platform 2',
+    link: '/studies/fatih'
+  }
+] %}
+
 <section class="case-studies">
   <div class="case-studies__container container">
     {% set headline_text = 'Some of our projects' %}
     {% include '_ui/headline/index.html' %}
 
-    {% for i in [0,1,2,3] %}
-    <div class="case-study case-study--{{ i }}">
+    {% for item in studies %}
+    <div class="case-study">
       <div class="case-study__tags"></div>
       <div class="case-study__img">
         <div class="case-study__img-wrap">
-          <img src="{{ '/img/home-study-1.jpg' | url | proton }}" alt="" loading="lazy" decoding="async">
-          <div class="case-study__img-bg" style="background-image: url({{ '/img/home-study-1.jpg' | url | proton }});"></div>
+          <img src="{{ item.image | url | proton }}" alt="" loading="lazy" decoding="async">
+          <div class="case-study__img-bg" style="background-image: url({{ item.image | url | proton }});"></div>
           <div class="case-study__img-overlay"></div>
         </div>
       </div>
       <div class="case-study__content">
         <div class="case-study__logo">
-          {% include '_svgs/logo-rolling-stone.svg' %}
+          {% include item.logo %}
         </div>
         <h4 class="case-study__h">
-          Revolutionary b2b
-          e&#8209;commerce platform
+          {{ item.title | nl2br | safe }}
         </h4>
 
-        <a href="" class="case-study__button button">
+        <a href="{{ item.link | url }}" class="case-study__button button">
           <span>See case study</span>
           {% include '_svgs/arrow-short.svg' %}
         </a>
