@@ -1,11 +1,12 @@
 [x] fatih study desktop
 [x] fatih linking
 [x] fatih study mobile
+
 [x] favicons
 [x] case studies header
 [x] dynamic date footer
-
-testimonials overlay
+[x] lazy load images fatih
+[x] testimonials overlay
 
 case studies list
 let us know button click

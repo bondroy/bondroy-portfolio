@@ -5,8 +5,8 @@ function Testimonials (el) {
   const slides = el.querySelectorAll('.testimonials__content-slide')
   let currId = 0
 
-  setImageStyles(getId('curr'), 'curr')
-  setSlideStyles(getId('curr'), 'curr')
+  goTo('next')
+  goTo('prev')
   prev.addEventListener('click', () => goTo('prev'))
   next.addEventListener('click', () => goTo('next'))
 
