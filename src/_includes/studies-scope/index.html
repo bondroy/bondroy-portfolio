@@ -5,10 +5,12 @@
       <div class="studies-scope__col">
         <img
           class="fatih__img-logo"
-          src="{{ '/img/'~ scope['icon'] ~'@1x.jpg' | url | proton }}"
+          src="{{ ('/img/'~ scope['icon'] ~'@1x.jpg') | url | proton }}"
+          loading="lazy"
+          decode="async"
           srcset="
-            {{ '/img/'~ scope['icon'] ~'@1x.jpg' | url | proton }} 1x,
-            {{ '/img/'~ scope['icon'] ~'@2x.jpg' | url | proton }} 2x,
+            {{ ('/img/'~ scope['icon'] ~'@1x.jpg') | url | proton }} 1x,
+            {{ ('/img/'~ scope['icon'] ~'@2x.jpg') | url | proton }} 2x,
           ">
         <div class="studies-scope__name">{{ scope['h'] }}</div>
         <div class="studies-scope__value">{{ scope['p'] }}</div>

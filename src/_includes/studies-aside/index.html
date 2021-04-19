@@ -13,10 +13,12 @@
       <div class="studies-aside__col -img">
         <img
           class="studies-aside__img"
-          src="{{ '/img/'~ studies_aside__img ~'@1x.jpg' | url | proton }}"
+          src="{{ ('/img/'~ studies_aside__img ~'@1x.jpg') | url | proton }}"
+          loading="lazy"
+          decode="async"
           srcset="
-            {{ '/img/'~ studies_aside__img ~'@1x.jpg' | url | proton }} 1x,
-            {{ '/img/'~ studies_aside__img ~'@2x.jpg' | url | proton }} 2x,
+            {{ ('/img/'~ studies_aside__img ~'@1x.jpg') | url | proton }} 1x,
+            {{ ('/img/'~ studies_aside__img ~'@2x.jpg') | url | proton }} 2x,
           ">
       </div>
     </div>

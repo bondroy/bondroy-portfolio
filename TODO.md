@@ -1,7 +1,6 @@
-[x] services border bottom
-[x] opening - no current openings
-[x] button hovers
-[x] services slower parallax
+vercel images
+check emails
+footer redesign
 
 mobile missing images
 
