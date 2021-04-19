@@ -1,5 +1,6 @@
 function Scroller (scroller) {
   const body = document.body
+  const imgs = document.querySelectorAll('img')
 
   // Check for DOM changes and reapply setBodyHeight
   const docObserver = new MutationObserver(debounce(setBodyHeight, 50))
@@ -13,6 +14,7 @@ function Scroller (scroller) {
   window.addEventListener('DOMContentLoaded', setBodyHeight)
   window.addEventListener('resize', setBodyHeight)
   window.addEventListener('load', setBodyHeight)
+  imgs.forEach(img => img.onload = setBodyHeight)
 
 
   function debounce(func, wait, immediate = true) {

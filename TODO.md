@@ -1,5 +1,7 @@
-vercel images
+[x] vercel images
+[x]
 check emails
+google analytics
 footer redesign
 
 mobile missing images
