@@ -192,6 +192,11 @@
 .flyout-start-project__button {
   margin-left: auto;
   font-size: 1.2rem;
+
+  &:hover {
+    border: .2rem solid white !important;
+    background: rgba(#191919, 0) !important;
+  }
 }
 
 // Input states

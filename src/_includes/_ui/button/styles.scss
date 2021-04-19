@@ -7,11 +7,18 @@
   padding: 0 4rem;
   background: #191919;
   color: white;
+  border: .2rem solid transparent;
   border-radius: .3rem;
   font-weight: bold;
   appearance: none;
   white-space: nowrap;
   transition: all .3s ease;
+
+  &:hover {
+    color: #191919;
+    border: .2rem solid #191919;
+    background: white;
+  }
 
   span + svg {
     margin-left: 1.5rem;
@@ -22,6 +29,11 @@
     color: #191919;
     border: .2rem solid #191919;
     background: white;
+
+    &:hover {
+      color: white;
+      background: rgba(#191919, 1);
+    }
   }
 
   &.-light {

@@ -1,8 +1,8 @@
-[] services border bottom
+[x] services border bottom
+[x] opening - no current openings
+[x] button hovers
 
-button hovers
 services slower parallax
-opening - no current openings
 mobile missing images
 
 start project click grow dot
