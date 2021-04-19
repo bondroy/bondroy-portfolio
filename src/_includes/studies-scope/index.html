@@ -8,6 +8,8 @@
           src="{{ ('/img/'~ scope['icon'] ~'@1x.jpg') | url | proton }}"
           loading="lazy"
           decode="async"
+          width="{{ ('/img/'~ scope['icon'] ~'@1x.jpg') | imgWidth }}"
+          height="{{ ('/img/'~ scope['icon'] ~'@1x.jpg') | imgHeight }}"
           srcset="
             {{ ('/img/'~ scope['icon'] ~'@1x.jpg') | url | proton }} 1x,
             {{ ('/img/'~ scope['icon'] ~'@2x.jpg') | url | proton }} 2x,

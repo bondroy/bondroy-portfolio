@@ -16,6 +16,8 @@
           src="{{ ('/img/'~ studies_aside__img ~'@1x.jpg') | url | proton }}"
           loading="lazy"
           decode="async"
+          width="{{ ('/img/'~ studies_aside__img ~'@1x.jpg') | imgWidth }}"
+          height="{{ ('/img/'~ studies_aside__img ~'@1x.jpg') | imgHeight }}"
           srcset="
             {{ ('/img/'~ studies_aside__img ~'@1x.jpg') | url | proton }} 1x,
             {{ ('/img/'~ studies_aside__img ~'@2x.jpg') | url | proton }} 2x,

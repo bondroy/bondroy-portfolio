@@ -1,4 +1,7 @@
 const fs = require('fs')
+const path = require('path')
+const Image = require('@11ty/eleventy-img')
+const sizeOf = require('image-size')
 
 module.exports = (config) => {
   config.addPassthroughCopy({ public: './' })
@@ -19,6 +22,16 @@ module.exports = (config) => {
   config.addFilter('proton', function(value) {
     // return value
     return 'https://i2.wp.com/bondroy-site.loudnow.vercel.app' + value
+  })
+
+  config.addFilter('imgWidth', (imgPath) => {
+    const dimensions = sizeOf(path.resolve(`${process.cwd()}/public/${imgPath}`));
+    return dimensions.width
+  })
+
+  config.addFilter('imgHeight', (imgPath) => {
+    const dimensions = sizeOf(path.resolve(`${process.cwd()}/public/${imgPath}`));
+    return dimensions.height
   })
 
   config.setBrowserSyncConfig({
