@@ -14,7 +14,15 @@
   ">
     <h3 class="cta__h">Let’s talk business</h3>
     <p class="cta__p">Let us know how we can help</p>
-    <a href="" class="cta__button button -border">
+    <a
+      class="cta__button button -border"
+      onclick="
+        scrollEnable();
+        classToggle('.header', '-dark', '.header__cta');
+        classRemove('.header__nav-item.-studies', '-active');
+        classRemove('.flyout-case-studies', '-open');
+        classToggle('.flyout-start-project', '-open');
+      ">
       {% include '_svgs/arrow-short.svg' %}
     </a>
   </div>

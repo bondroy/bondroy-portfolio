@@ -3,7 +3,9 @@
     {% set headline_text = 'Current openings' %}
     {% include '_ui/headline/index.html' %}
 
-    {% for opening in openings %}
+    <p class="openings__nothing">No open positions at this time.</p>
+
+    {# {% for opening in openings %}
     <a href="{{ '/careers/' ~ opening.title | slug | url }}/" class="opening">
       <h4 class="opening__h">{{ opening.title }}</h4>
       <span class="opening__a">
@@ -16,7 +18,7 @@
         {% endfor %}
       </p>
     </a>
-    {% endfor %}
+    {% endfor %} #}
   </div>
 </section>
 

@@ -1,18 +1,7 @@
-[x] fatih study desktop
-[x] fatih linking
-[x] fatih study mobile
+[] services border bottom
 
-[x] favicons
-[x] case studies header
-[x] dynamic date footer
-[x] lazy load images fatih
-[x] testimonials overlay
-
-case studies list
-let us know button click
 button hovers
 services slower parallax
-services border bottom
 opening - no current openings
 mobile missing images
 
