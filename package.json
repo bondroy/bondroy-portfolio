@@ -11,7 +11,7 @@
     "dev": "npm-run-all clean build:* -p dev:*",
     "dev:gulp": "gulp watch",
     "dev:11ty": "eleventy --serve",
-    "deploy": "npm run build && bash deploy.sh"
+    "deploy": "npm run build && vercel ./dist --prod"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^0.8.3",
