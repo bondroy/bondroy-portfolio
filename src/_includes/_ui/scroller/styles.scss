@@ -43,5 +43,6 @@ body {
   .scroller {
     position: static;
     pointer-events: all;
+    transform: translateY(0) !important;
   }
 }

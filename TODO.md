@@ -4,12 +4,15 @@
 [x] fix favicons sizing
 [x] deploy outside of dist
 
-[] footer redesign
-[] google analytics
-[] check emails
-[] mobile missing images
+[x] footer redesign
+[x] fix cta
+[x] check emails
+[x] google analytics
+
 [] domain hit
 [] update weboost footer
+
+[] mobile missing images
 
 start project click grow dot
 lazy load images
