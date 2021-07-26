@@ -21,7 +21,7 @@ module.exports = (config) => {
 
   config.addFilter('proton', function(value) {
     // return value
-    return 'https://i2.wp.com/bondroy-site.loudnow.vercel.app' + value
+    return 'https://i2.wp.com/bondroy.netlify.app' + value
   })
 
   config.addFilter('imgWidth', (imgPath) => {
