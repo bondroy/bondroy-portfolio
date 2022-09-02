@@ -28,86 +28,99 @@
       <h2 class="flyout-start-project__h">Let’s talk business</h2>
       <p class="flyout-start-project__p">We hoped you’d land here.</p>
 
-      <form action="https://getform.io/f/b499db0c-dca3-476d-bedf-af8407d335a6" class="flyout-start-project__form" novalidate="true">
-        <div class="flyout-start-project__line">
-          <span>Hi! My name is</span>
-          <div class="flyout-start-project__field -name">
-            <input data-cursor type="text" class="flyout-start-project__field-input" placeholder="Full name *" required name="name">
-            <label for="start-name" class="flyout-start-project__field-label">Full name</label>
-            <div class="flyout-start-project__field-line"></div>
-          </div>
-          <span>and you can reach me at</span>
-          <div class="flyout-start-project__field">
-            <input data-cursor type="email" class="flyout-start-project__field-input" placeholder="Email address *" required name="email">
-            <label for="start-name" class="flyout-start-project__field-label">Email address</label>
-            <div class="flyout-start-project__field-line"></div>
-          </div>
-        </div>
+      <div class="flyout-start-project__dynamic"></div>
 
-        <div class="flyout-start-project__line">
-          <span>I’m hoping to build business bond about</span>
-          <div class="flyout-start-project__field">
-            <input data-cursor type="text" class="flyout-start-project__field-input" placeholder="Project name" name="project">
-            <label for="start-name" class="flyout-start-project__field-label">Project name</label>
-            <div class="flyout-start-project__field-line"></div>
-          </div>
-        </div>
-
-        <div class="flyout-start-project__line">
-          <span>I’m interested in:</span>
-          <div class="flyout-start-project__checkboxes">
-            <input type="checkbox" class="flyout-start-project__checkbox" id="discovery" value="discovery" name="services">
-            <label data-cursor for="discovery" class="flyout-start-project__checkbox-label">Discovery</label>
-            <input type="checkbox" class="flyout-start-project__checkbox" id="branding" value="branding" name="services">
-            <label data-cursor for="branding" class="flyout-start-project__checkbox-label">Branding</label>
-            <input type="checkbox" class="flyout-start-project__checkbox" id="product-design" value="product-design" name="services">
-            <label data-cursor for="product-design" class="flyout-start-project__checkbox-label">Product Design</label>
-            <input type="checkbox" class="flyout-start-project__checkbox" id="ux-audit" value="ux-audit" name="services">
-            <label data-cursor for="ux-audit" class="flyout-start-project__checkbox-label">UX Audit</label>
-            <input type="checkbox" class="flyout-start-project__checkbox" id="development" value="development" name="services">
-            <label data-cursor for="development" class="flyout-start-project__checkbox-label">Development</label>
-            <input type="checkbox" class="flyout-start-project__checkbox" id="dev-audit" value="dev-audit" name="services">
-            <label data-cursor for="dev-audit" class="flyout-start-project__checkbox-label">Dev Audit</label>
-          </div>
-        </div>
-
-        <div class="flyout-start-project__line">
-          <span>I’m hoping to stay around a budget of</span>
-          <div class="flyout-start-project__field">
-            <select data-cursor type="text" class="flyout-start-project__field-input -select" name="budget">
-              <option value="">Select budget range</option>
-              <option value="<$50000">< $50 000</option>
-              <option value="<$100000">< $100 000</option>
-              <option value="<$250000">< $250 000</option>
-              <option value="sky-limit">Sky is the limit</option>
-            </select>
-            {% include '_svgs/carrot.svg' %}
-            <div class="flyout-start-project__field-line"></div>
-          </div>
-        </div>
-
-        <div class="flyout-start-project__line">
-          <span>Optionally, I’m sharing</span>
-          <div class="flyout-start-project__field -fullwidth">
-            <textarea data-cursor class="flyout-start-project__field-input -textarea" placeholder="Project description" name="message"></textarea>
-            <label for="start-name" class="flyout-start-project__field-label">Project description</label>
-            <div class="flyout-start-project__field-line"></div>
-          </div>
-        </div>
-
-        <div class="flyout-start-project__footer">
-          <span>* required fields</span>
-          <button class="flyout-start-project__button button -border" data-cursor>
-            Send
-          </button>
-        </div>
-      </form>
     </div>
   </div>
 </section>
 
 <script>
   {% require_once 'flyout-start-project/build/index.js' | safe %}
-  new StartProject(document.querySelector('.flyout-start-project'))
+
+  const flyoutForm = `
+  <form action="https://getform.io/f/b499db0c-dca3-476d-bedf-af8407d335a6" class="flyout-start-project__form" novalidate="true">
+    <div class="flyout-start-project__line">
+      <span>Hi! My name is</span>
+      <div class="flyout-start-project__field -name">
+        <input data-cursor type="text" class="flyout-start-project__field-input" placeholder="Full name *" required name="name">
+        <label for="start-name" class="flyout-start-project__field-label">Full name</label>
+        <div class="flyout-start-project__field-line"></div>
+      </div>
+      <span>and you can reach me at</span>
+      <div class="flyout-start-project__field">
+        <input data-cursor type="email" class="flyout-start-project__field-input" placeholder="Email address *" required name="email">
+        <label for="start-name" class="flyout-start-project__field-label">Email address</label>
+        <div class="flyout-start-project__field-line"></div>
+      </div>
+    </div>
+
+    <div class="flyout-start-project__line">
+      <span>I’m hoping to build business bond about</span>
+      <div class="flyout-start-project__field">
+        <input data-cursor type="text" class="flyout-start-project__field-input" placeholder="Project name" name="project">
+        <label for="start-name" class="flyout-start-project__field-label">Project name</label>
+        <div class="flyout-start-project__field-line"></div>
+      </div>
+    </div>
+
+    <div class="flyout-start-project__line">
+      <span>I’m interested in:</span>
+      <div class="flyout-start-project__checkboxes">
+        <input type="checkbox" class="flyout-start-project__checkbox" id="discovery" value="discovery" name="services">
+        <label data-cursor for="discovery" class="flyout-start-project__checkbox-label">Discovery</label>
+        <input type="checkbox" class="flyout-start-project__checkbox" id="branding" value="branding" name="services">
+        <label data-cursor for="branding" class="flyout-start-project__checkbox-label">Branding</label>
+        <input type="checkbox" class="flyout-start-project__checkbox" id="product-design" value="product-design" name="services">
+        <label data-cursor for="product-design" class="flyout-start-project__checkbox-label">Product Design</label>
+        <input type="checkbox" class="flyout-start-project__checkbox" id="ux-audit" value="ux-audit" name="services">
+        <label data-cursor for="ux-audit" class="flyout-start-project__checkbox-label">UX Audit</label>
+        <input type="checkbox" class="flyout-start-project__checkbox" id="development" value="development" name="services">
+        <label data-cursor for="development" class="flyout-start-project__checkbox-label">Development</label>
+        <input type="checkbox" class="flyout-start-project__checkbox" id="dev-audit" value="dev-audit" name="services">
+        <label data-cursor for="dev-audit" class="flyout-start-project__checkbox-label">Dev Audit</label>
+      </div>
+    </div>
+
+    <div class="flyout-start-project__line">
+      <span>I’m hoping to stay around a budget of</span>
+      <div class="flyout-start-project__field">
+        <select data-cursor type="text" class="flyout-start-project__field-input -select" name="budget">
+          <option value="">Select budget range</option>
+          <option value="<$50000">< $50 000</option>
+          <option value="<$100000">< $100 000</option>
+          <option value="<$250000">< $250 000</option>
+          <option value="sky-limit">Sky is the limit</option>
+        </select>
+        {% include '_svgs/carrot.svg' %}
+        <div class="flyout-start-project__field-line"></div>
+      </div>
+    </div>
+
+    <div class="flyout-start-project__line">
+      <span>Optionally, I’m sharing</span>
+      <div class="flyout-start-project__field -fullwidth">
+        <textarea data-cursor class="flyout-start-project__field-input -textarea" placeholder="Project description" name="message"></textarea>
+        <label for="start-name" class="flyout-start-project__field-label">Project description</label>
+        <div class="flyout-start-project__field-line"></div>
+      </div>
+    </div>
+
+    <div class="flyout-start-project__footer">
+      <span>* required fields</span>
+      <button class="flyout-start-project__button button -border" data-cursor>
+        Send
+      </button>
+    </div>
+  </form>
+`
+
+  setTimeout(() => {
+    document.querySelectorAll('.header__cta, .flyout-menu__link').forEach(el => {
+      el.addEventListener('click', e => {
+        document.querySelector('.flyout-start-project__dynamic').innerHTML = flyoutForm
+        new StartProject(document.querySelector('.flyout-start-project'))
+      }, {once: true})
+    })
+  }, 500)
 </script>
 
