@@ -24,13 +24,27 @@
 
   h3 { margin-bottom: 4rem; }
 
-  ul { list-style: none; }
+  ul, ol { list-style: none; }
 
   li {
     position: relative;
     padding-left: 3rem;
+  }
+
+  ul li {
     &::before {
       content: '•';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  ol {counter-reset: list;}
+
+  ol li {
+    &::before {
+      counter-increment: list;
+      content: counter(list)".";
       position: absolute;
       left: 0;
     }

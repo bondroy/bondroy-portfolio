@@ -20,6 +20,9 @@ function OpeningFooter (el, container) {
     }
   })
 
+  // Add secondary footer from js / outside of scroller
+  // stripes
+
   window.renderer.onRender(() => {
     if (window.matchMedia('(max-width: 1040px)').matches) return
 
@@ -27,6 +30,7 @@ function OpeningFooter (el, container) {
       el.classList.add('-bottom')
     } else {
       el.classList.remove('-bottom')
+      console.log(footerOffset)
       el.style.transform = 'translateY(-' + footerOffset + 'px) translateZ(0)'
     }
   })
