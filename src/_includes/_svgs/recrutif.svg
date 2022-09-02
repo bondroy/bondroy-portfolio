@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="24px" viewBox="0 0 79 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Projects' logo</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter color-interpolation-filters="auto" id="filter-2">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.1.-Menu---Case-studies" transform="translate(-751.000000, -413.000000)">
+            <g id="00.-Menu-expanded" transform="translate(0.226381, 0.000000)">
+                <g id="Projects'-logo" transform="translate(749.773619, 413.000000)" filter="url(#filter-1)">
+                    <g filter="url(#filter-2)" id="Logo">
+                        <g transform="translate(4.000000, 3.000000)">
+                            <text id="ecrutify" font-family=".AppleSystemUIFont" font-size="18.028169" font-weight="normal" line-spacing="14.4225352" letter-spacing="0.732394339" fill="#FFFFFF">
+                                <tspan x="19.7183099" y="19.5858043">ecrutif</tspan>
+                                <tspan x="19.7183099" y="34.0083395">y</tspan>
+                            </text>
+                            <g id="Sygnet" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.05633803">
+                                <path d="M0,5.75678886 C0,2.57721665 2.67546596,0 5.97574405,0 C9.27579535,0 11.9512613,2.57721665 11.9512613,5.75678886 C11.9512613,8.93614259 9.27579535,11.5135777 5.97574405,11.5135777" id="Stroke-1" stroke="#FFFFFF"></path>
+                                <line x1="15.0546839" y1="18.5550422" x2="9.6739774" y2="10.5886768" id="Stroke-3" stroke="#FFFFFF"></line>
+                                <line x1="0" y1="18.6802326" x2="0" y2="12.6719706" id="Stroke-5" stroke="#02E079"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,5 @@
 .DS_Store
 dist
-img
 node_modules
 
 .vercel
