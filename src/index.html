@@ -9,5 +9,12 @@ title: Homepage
   {% include 'tag-scroller/index.html' %}
   {% include 'case-studies/index.html' %}
   {# {% include 'testimonials/index.html' %} #}
-  {% include 'cta/index.html' %}
+
+  <div class="strips-wrap">
+    <div class="strips"></div>
+    {% include 'cta/index.html' %}
+  </div>
+  <style>
+    {% require_once '_ui/strips/build/styles.css' | safe %}
+  </style>
 {% endblock %}

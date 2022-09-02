@@ -1,0 +1,25 @@
+.strips-wrap {
+  position: relative;
+}
+
+.strips {
+  z-index: -1;
+  position: absolute;
+  top: 0.1rem;
+  left: 50%;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(to right, transparent 0, transparent  12rem, black 12rem, black 24rem);
+  background-position: right;
+  transform: skew(30deg) translateX(-50%);
+
+  &.-show-mobile { display: none; }
+
+  @media (max-width: 1040px) {
+    background: repeating-linear-gradient(to right, transparent 0, transparent  9rem, black 9rem, black 18rem);
+    &.-show-mobile { display: block; }
+    &.-hide-mobile { display: none; }
+  }
+}
+
+

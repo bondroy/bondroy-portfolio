@@ -3,15 +3,30 @@
   align-items: center;
   height: 58rem;
   cursor: initial !important;
-  background: white;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .cta__container {
+  position: relative;
+  z-index: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   max-width: 85rem;
   padding: 7rem 10rem 7rem 10rem;
+}
+
+.cta__container-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: white;
+  transform: skew(30deg);
 }
 
 .cta__h {

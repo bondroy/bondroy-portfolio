@@ -1,18 +1,15 @@
 <div class="roadmap" data-cursor data-cursor-scale="1">
-  <div class="roadmap__container container">
+  <div class="roadmap__header-bg">
+    <div class="roadmap__container container">
 
-    {% set headline_text = 'Our usual roadmap' %}
-    {% include '_ui/headline/index.html' %}
+      {% set headline_text = 'Our usual roadmap' %}
+      {% include '_ui/headline/index.html' %}
 
-    <p class="roadmap__subtitle">Every project has it own rules but we try to implement our best practises.</p>
+      <p class="roadmap__subtitle">Every project has it own rules but we try to implement our best practises.</p>
+    </div>
   </div>
 
-  <div class="roadmap__bg" style="
-    background:
-      url({{ '/img/cta-bg.svg' | url }}) calc(50% - 2.3rem) 0 repeat-x,
-      url({{ '/img/cta-bg.svg' | url }}) calc(50% + 3.47rem) 10rem repeat-x;
-    background-size: 24rem 58.1rem, 24rem 58.1rem;
-  ">
+  <div class="roadmap__bg">
     <div class="container">
       <div class="roadmap__list">
         <div class="roadmap__item">

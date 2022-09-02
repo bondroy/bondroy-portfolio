@@ -8,6 +8,16 @@ menu_item: '-services'
 {% block body %}
   {% include 'hero/services.html' %}
   {% include 'services/index.html' %}
-  {% include 'roadmap/index.html' %}
-  {% include 'cta/index.html' %}
+
+  <div class="strips-wrap">
+    <div class="strips -hide-mobile"></div>
+    {% include 'roadmap/index.html' %}
+    <div class="strips-wrap">
+      <div class="strips -show-mobile"></div>
+      {% include 'cta/index.html' %}
+    </div>
+  </div>
+  <style>
+    {% require_once '_ui/strips/build/styles.css' | safe %}
+  </style>
 {% endblock %}

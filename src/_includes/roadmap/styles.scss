@@ -2,9 +2,17 @@
   position: relative;
   z-index: 1;
   margin-bottom: -2px;
-  overflow-x: hidden;
   cursor: initial !important;
-  background: white;
+}
+
+.roadmap__header-bg {
+  background-color: white;
+  padding-bottom: 8rem;
+}
+
+.roadmap__list-wrap {
+  position: relative;
+  z-index: 1;
 }
 
 .roadmap__list {
@@ -53,7 +61,6 @@
 
 
 .roadmap__bg {
-  margin-top: 8rem;
   height: 68rem;
 }
 
