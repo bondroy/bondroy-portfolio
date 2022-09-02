@@ -1,0 +1,1 @@
+"use strict";function Cookies(o){localStorage.getItem("bondroy_cookies")?o.remove():o.querySelector(".cookies__agree").addEventListener("click",function(e){e.preventDefault(),o.remove(),localStorage.setItem("bondroy_cookies",!0)})}
