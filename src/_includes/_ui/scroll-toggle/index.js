@@ -59,7 +59,6 @@
 
   document.querySelectorAll('.flyout').forEach(el => {
     el.addEventListener('scroll', e => {
-      console.log(e)
     })
   })
 })()

@@ -6,7 +6,6 @@ function classToggle (selector, className, triggerEl) {
 
   } else {
     if (typeof triggerEl === 'string') triggerEl = document.querySelector(triggerEl)
-    console.log(triggerEl)
     if (!el.triggerEl) el.classList.add(className)
     else if (el.triggerEl !== triggerEl) el.classList.add(className)
     else if (el.triggerEl === triggerEl) el.classList.toggle(className)
