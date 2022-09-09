@@ -1,42 +1,48 @@
 function OpeningFooter (el, container) {
-  let footerOffset = 0
-  let height
-  let containerEnd
-  let scrolledToBottom
+  const footer = document.createDocumentFragment()
+  footer.innerHTML = el.outerHTML
 
-  setVars()
-  window.addEventListener('DOMContentLoaded', setVars)
-  window.addEventListener('resize', setVars)
-  window.addEventListener('load', setVars)
+  document.body.appendChild(footer)
 
-  window.renderer.onUpdate((offset) => {
-    if (window.matchMedia('(max-width: 1040px)').matches) return
+  console.log(footer.children)
+  // let footerOffset = 0
+  // let height
+  // let containerEnd
+  // let scrolledToBottom
 
-    scrolledToBottom = offset + window.innerHeight >= containerEnd
-    if (!scrolledToBottom) {
-      el.classList.remove('-bottom')
-      footerOffset = Math.min(offset, height)
-      footerOffset = Math.max(footerOffset, 0)
-    }
-  })
+  // setVars()
+  // window.addEventListener('DOMContentLoaded', setVars)
+  // window.addEventListener('resize', setVars)
+  // window.addEventListener('load', setVars)
 
-  // Add secondary footer from js / outside of scroller
-  // stripes
+  // window.renderer.onUpdate((offset) => {
+  //   if (window.matchMedia('(max-width: 1040px)').matches) return
 
-  window.renderer.onRender(() => {
-    if (window.matchMedia('(max-width: 1040px)').matches) return
+  //   scrolledToBottom = offset + window.innerHeight >= containerEnd
+  //   if (!scrolledToBottom) {
+  //     el.classList.remove('-bottom')
+  //     footerOffset = Math.min(offset, height)
+  //     footerOffset = Math.max(footerOffset, 0)
+  //   }
+  // })
 
-    if (scrolledToBottom) {
-      el.classList.add('-bottom')
-    } else {
-      el.classList.remove('-bottom')
-      console.log(footerOffset)
-      el.style.transform = 'translateY(-' + footerOffset + 'px) translateZ(0)'
-    }
-  })
+  // // Add secondary footer from js / outside of scroller
+  // // stripes
 
-  function setVars () {
-    height = el.offsetHeight
-    containerEnd = container.offsetHeight + container.offsetTop
-  }
+  // window.renderer.onRender(() => {
+  //   if (window.matchMedia('(max-width: 1040px)').matches) return
+
+  //   if (scrolledToBottom) {
+  //     el.classList.add('-bottom')
+  //   } else {
+  //     el.classList.remove('-bottom')
+  //     console.log(footerOffset)
+  //     el.style.transform = 'translateY(-' + footerOffset + 'px) translateZ(0)'
+  //   }
+  // })
+
+  // function setVars () {
+  //   height = el.offsetHeight
+  //   containerEnd = container.offsetHeight + container.offsetTop
+  // }
 }

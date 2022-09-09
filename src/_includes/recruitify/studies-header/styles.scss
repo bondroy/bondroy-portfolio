@@ -1,0 +1,85 @@
+.studies-header {
+  margin-top: 10rem;
+  padding: 20rem 0;
+}
+
+.studies-header__container {
+  display: flex;
+}
+
+.studies-header__body {
+  max-width: 41rem;
+}
+
+.studies-header__logo {
+
+}
+
+.studies-header__subtitle {
+  // font-family: .AppleSystemUIFont;
+  font-size: 1.2rem;
+  color: #013243;
+  line-height: 2.6rem;
+  margin-top: 5rem;
+}
+
+.studies-header__title {
+  font-family: Helvetica;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  color: #013243;
+  margin-top: 1rem;
+  max-width: 32rem;
+}
+
+.studies-header__separator {
+  margin-top: 5rem;
+  background: #02E079;
+  border-radius: .5rem;
+  width: 5rem;
+  height: .5rem;
+}
+
+.studies-header__copy {
+  font-family: Helvetica;
+  font-size: 1.6rem;
+  color: #013243;
+  line-height: 2.6rem;
+  max-width: 22rem;
+  margin-top: 2.5rem;
+}
+
+.studies-header__meta {
+  display: flex;
+  margin-top: 13rem;
+}
+
+.studies-header__col {
+  & + & { margin-left: 5.5rem; }
+}
+
+.studies-header__col-title {
+  opacity: 0.5;
+  font-family: Helvetica;
+  font-size: 1.0rem;
+  color: #013243;
+  line-height: 2.8rem;
+}
+
+.studies-header__col-copy {
+  // font-family: .AppleSystemUIFont;
+  font-size: 1.1rem;
+  color: #013243;
+  line-height: 2.8rem;
+}
+
+.studies-header__img {
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: -35rem;
+    left: 0;
+    max-width: none;
+  }
+}

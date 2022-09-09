@@ -1,0 +1,43 @@
+<div class="studies-header">
+  <div class="studies-header__container container">
+    <div class="studies-header__body">
+      <div class="studies-header__logo">
+        {% include '_svgs/logo-recruitify-rect.svg' %}
+      </div>
+      <div class="studies-header__subtitle">Case Study</div>
+      <div class="studies-header__title">All-in-One <br> ATS Recruiting Platform</div>
+      <div class="studies-header__separator"></div>
+      <div class="studies-header__copy">A new generation platform for your recruitment processes</div>
+      <div class="studies-header__meta">
+        <div class="studies-header__col">
+          <div class="studies-header__col-title">Client</div>
+          <div class="studies-header__col-copy">Recruitify</div>
+        </div>
+        <div class="studies-header__col">
+          <div class="studies-header__col-title">Project</div>
+          <div class="studies-header__col-copy">Recruitify ATS</div>
+        </div>
+        <div class="studies-header__col">
+          <div class="studies-header__col-title">Role</div>
+          <div class="studies-header__col-copy">Product Design & Development</div>
+        </div>
+      </div>
+    </div>
+    <div class="studies-header__img">
+      <img
+        loading="lazy"
+        decoding="async"
+        src="{{ '/img/recruitify-header@1x.png' | url }}"
+        width="{{ '/img/recruitify-header@1x.png' | imgWidth }}"
+        height="{{ '/img/recruitify-header@1x.png' | imgHeight }}"
+        srcset="
+          {{ '/img/recruitify-header@1x.png' | url }} 1x,
+          {{ '/img/recruitify-header@2x.png' | url }} 2x,
+        ">
+    </div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'recruitify/studies-header/build/styles.css' | safe %}
+</style>
