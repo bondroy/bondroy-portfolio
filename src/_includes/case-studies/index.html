@@ -1,10 +1,30 @@
 {% set studies = [
   {
-    image: '/img/home-study-1.jpg',
+    image1: '/img/iFATIH/iFATIH.jpg',
+    image2: '/img/iFATIH/iFATIH@2x.jpg',
+    image3: '/img/iFATIH/iFATIH@3x.jpg',
     logo: '_svgs/logo-fatih.svg',
     title: 'Revolutionary b2b
       e&#8209;commerce platform',
     link: '/studies/fatih'
+  },
+  {
+    image1: '/img/Recruitify/Recruitify.jpg',
+    image2: '/img/Recruitify/Recruitify@2x.jpg',
+    image3: '/img/Recruitify/Recruitify@3x.jpg',
+    logo: '_svgs/logo-recruitify.svg',
+    title: 'All-in-One
+      ATS Recruiting Software',
+    link: '/studies/recruitify'
+  },
+  {
+    image1: '/img/iDO/iDO.jpg',
+    image2: '/img/iDO/iDO@2x.jpg',
+    image3: '/img/iDO/iDO@3x.jpg',
+    logo: '_svgs/logo-ido.svg',
+    title: 'Service exchange
+      mobile application',
+    link: '/studies/ido'
   }
 ] %}
 
@@ -18,8 +38,15 @@
       <div class="case-study__tags"></div>
       <div class="case-study__img">
         <div class="case-study__img-wrap">
-          <img src="{{ item.image | url | proton }}" alt="" loading="lazy" decoding="async">
-          <div class="case-study__img-bg" style="background-image: url({{ item.image | url | proton }});"></div>
+          <img
+            loading="lazy"
+            decoding="async"
+            src="{{ item.image1 | url }}"
+            srcset="
+              {{ item.image1 | url }} 1x,
+              {{ item.image2 | url }} 2x,
+              {{ item.image3 | url }} 3x,
+            ">
           <div class="case-study__img-overlay"></div>
         </div>
       </div>
