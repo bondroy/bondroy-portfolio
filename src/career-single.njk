@@ -12,8 +12,15 @@ menu_item: '-careers'
 
 {% block body %}
   <div class="opening">
+
+    <div class="strips-wrap">
+      <div class="strips"></div>
+      <div class="container">
+        <h2 class="opening__h">{{ opening.title }}</h2>
+      </div>
+    </div>
+
     <div class="opening__container container">
-      <h2 class="opening__h">{{ opening.title }}</h2>
       {{ opening.content | safe }}
       <div class="opening__footer">
         <div class="openinng__footer-container container">
@@ -30,6 +37,8 @@ menu_item: '-careers'
   </div>
 
   <style>
+    .header__bg { display: none !important; }
+    {% require_once '_ui/strips/build/styles.css' | safe %}
     {% require_once '_ui/button/build/styles.css' | safe %}
     {% require_once 'opening/build/styles.css' | safe %}
   </style>
