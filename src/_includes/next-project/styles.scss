@@ -1,18 +1,12 @@
-.case-studies .headline {
-  background-color: white;
-  margin-bottom: 12rem;
-}
-
-.case-study {
+.next-project {
   display: flex;
   align-items: center;
   position: relative;
   background-color: white;
-
-  & + & { margin-top: 18rem; }
+  margin-top: 18rem;
 }
 
-.case-study__img-wrap {
+.next-project__img-wrap {
   height: 82.5vh;
   width: 48.5vh;
   overflow: hidden;
@@ -29,7 +23,7 @@
   }
 }
 
-.case-study__img-bg {
+.next-project__img-bg {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -41,13 +35,34 @@
   display: none;
 }
 
-.case-study__img {
+.next-project__img {
   height: 82.5vh;
   width: 48.5rem;
   direction: rtl;
+  position: relative;
 }
 
-.case-study__img-overlay {
+.next-project__parallax {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.next-project__img-hand {
+  position: absolute;
+  z-index: 1;
+  left: -35%;
+  bottom: calc(-10% + 30rem);
+}
+
+.next-project__img-cursor {
+  position: absolute;
+  z-index: 1;
+  right: -30%;
+  top: 80rem;
+}
+
+.next-project__img-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -59,7 +74,7 @@
   transition: transform 1s $easeOutExpo;
 }
 
-.case-study__content {
+.next-project__content {
   max-width: 48rem;
   margin-left: 12rem;
 
@@ -71,34 +86,34 @@
   // transition: opacity .5s $easeOutExpo;
 }
 
-.case-study__h {
+.next-project__h {
   margin-top: 3.5rem;
 }
 
-.case-study__button {
+.next-project__button {
   margin-top: 4.5rem;
 }
 
 
 @media (max-height: 1110px) {
-  .case-study__img {
+  .next-project__img {
     direction: ltr;
   }
 }
 
 @media (max-width: 1040px) {
-  .case-study {
+  .next-project {
     flex-direction: column;
     align-items: flex-end;
     & + & { margin-top: 8rem; }
   }
 
-  .case-study__img,
-  .case-study__img-wrap {
+  .next-project__img,
+  .next-project__img-wrap {
     max-width: 100%;
   }
 
-  .case-study__content {
+  .next-project__content {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -110,7 +125,15 @@
     padding-bottom: 3rem;
   }
 
-  .case-study__img-bg {
+  .next-project__img-bg {
     display: block;
+  }
+
+  .next-project__img-hand {
+    bottom: 0;
+  }
+
+  .next-project__img-cursor {
+    top: 0;
   }
 }

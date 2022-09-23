@@ -84,8 +84,8 @@
 
 <script>
   {% require_once '_ui/screen-progress/build/index.js' | safe %}
-  {% require_once 'services/build/index.js' | safe %}
-  new Services(document.querySelector('.services'))
+  {% require_once '_ui/parallax-composition/build/index.js' | safe %}
+  document.querySelectorAll('.service__image').forEach(el => new ParallaxComposition(el))
 </script>
 
 <style>

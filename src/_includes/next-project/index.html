@@ -1,0 +1,70 @@
+<section>
+  <div class="next-project__container container">
+    <div class="next-project">
+      <div class="next-project__tags"></div>
+      <div class="next-project__img">
+        <div class="next-project__parallax">
+          <img
+            data-parallax="8"
+            class="next-project__img-hand"
+            loading="lazy"
+            decoding="async"
+            src="{{ '/img/next-project/Hand.png' | url }}"
+            srcset="
+              {{ '/img/next-project/Hand.png' | url }} 1x,
+              {{ '/img/next-project/Hand@2x.png' | url }} 2x,
+              {{ '/img/next-project/Hand@3x.png' | url }} 3x,
+            ">
+          <img
+            data-parallax="-20"
+            class="next-project__img-cursor"
+            loading="lazy"
+            decoding="async"
+            src="{{ '/img/next-project/Cursor.png' | url }}"
+            srcset="
+              {{ '/img/next-project/Cursor.png' | url }} 1x,
+              {{ '/img/next-project/Cursor@2x.png' | url }} 2x,
+              {{ '/img/next-project/Cursor@3x.png' | url }} 3x,
+            ">
+
+          <div class="next-project__img-wrap">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="{{ '/img/next-project/bg@1x.jpg' | url }}"
+              srcset="
+                {{ '/img/next-project/bg@1x.jpg' | url }} 1x,
+                {{ '/img/next-project/bg@2x.jpg' | url }} 2x,
+                {{ '/img/next-project/bg@3x.jpg' | url }} 3x,
+              ">
+            <div class="next-project__img-overlay"></div>
+          </div>
+        </div>
+      </div>
+      <div class="next-project__content">
+        <div class="next-project__logo">
+          {% include '_svgs/mini-strips.svg' %}
+        </div>
+        <h4 class="next-project__h">
+          Your next project?
+        </h4>
+
+        <a href="mailto:hello@bondroy.com" class="next-project__button button">
+          <span>Tell us about it</span>
+          {% include '_svgs/arrow-short.svg' %}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  {% require_once '_ui/button/build/styles.css' | safe %}
+  {% require_once 'next-project/build/styles.css' | safe %}
+</style>
+
+<script>
+  {% require_once '_ui/screen-progress/build/index.js' | safe %}
+  {% require_once '_ui/parallax-composition/build/index.js' | safe %}
+  new ParallaxComposition(document.querySelector('.next-project__parallax'))
+</script>
