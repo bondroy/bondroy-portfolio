@@ -28,7 +28,7 @@
       <h2 class="flyout-start-project__h">Let’s talk business</h2>
       <p class="flyout-start-project__p">We hoped you’d land here.</p>
 
-      <form action="https://getform.io/f/b499db0c-dca3-476c-bedf-af8407d335a6" class="flyout-start-project__form" novalidate="true">
+      <form action="https://getform.io/f/b499db0c" class="flyout-start-project__form" novalidate="true">
         <div class="flyout-start-project__line">
           <span>Hi! My name is</span>
           <div class="flyout-start-project__field -name">
@@ -111,10 +111,10 @@
   {% require_once 'flyout-start-project/build/index.js' | safe %}
   new StartProject(document.querySelector('.flyout-start-project'))
 
-  document.querySelectorAll('.header__cta, .flyout-menu__link').forEach(el => {
-    el.addEventListener('click', e => {
+  window.addEventListener('click', e => {
+    if (['header__cta', 'flyout-menu__link'].includes(e.target.className)) {
       setTimeout(() => document.querySelector('.flyout-start-project__form').setAttribute('action', 'https://getform.io/f/b499db0c-dca3-476d-bedf-af8407d335a6'), 5000)
-    }, {once: true})
+    }
   })
 </script>
 
