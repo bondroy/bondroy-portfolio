@@ -1,0 +1,14 @@
+<div class="recruitify-headline">
+  <div class="recruitify-headline__container container">
+    <div class="recruitify-headline__no">{{ headline__no | nl2br | safe }}</div>
+    <div class="recruitify-headline__headline">
+      <div class="recruitify-headline__meta">{{ headline__meta | nl2br | safe }}</div>
+      <div class="recruitify-headline__title">{{ headline__title | nl2br | safe }}</div>
+    </div>
+    <div class="recruitify-headline__desc" style="max-width: {{ headline__width }};">{{ headline__desc | nl2br | safe }}</div>
+  </div>
+</div>
+
+<style>
+  {% require_once 'recruitify/headline/build/styles.css' | safe %}
+</style>

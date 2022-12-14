@@ -1,103 +1,77 @@
-.intro,
-.intro * {
-  box-sizing: border-box;
-}
+
 .intro {
   display: flex;
   flex-direction: column;
-  gap: 0px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
 .intro__wavestop {
   flex-shrink: 0;
-  position: relative;
   overflow: visible;
+  width: 100%;
 }
 .intro__container {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1110px;
-  position: relative;
 }
 .intro__headline {
   display: flex;
   flex-direction: row;
-  gap: 49px;
+  gap: 5rem;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
 .intro__no {
   color: #d3d8d9;
-  text-align: left;
-  font: 600 80px/20.8px "Poppins", sans-serif;
-  opacity: 0.10000000149011612;
-  position: relative;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
+  font: 600 8rem/2.1rem "Poppins", sans-serif;
+  opacity: 0.1;
 }
 .intro__right {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
 .intro__meta {
   color: #02e079;
-  text-align: left;
-  font: 600 16px/26px "Poppins", sans-serif;
+  font: 600 1.6rem/2.6rem "Poppins", sans-serif;
   text-transform: uppercase;
-  position: relative;
 }
 .intro__title {
   color: #ffffff;
-  text-align: left;
-  font: 600 36px "Poppins", sans-serif;
-  position: relative;
-  width: 574px;
+  font: 600 3.6rem "Poppins", sans-serif;
+  width: 57.4rem;
 }
 .intro__content {
   display: flex;
   flex-direction: row;
-  gap: 63px;
+  gap: 6.3rem;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
 }
 .intro__frame-1 {
   flex-shrink: 0;
-  width: 68px;
-  height: 192px;
-  position: relative;
-  overflow: hidden;
+  width: 6.8rem;
+  height: 19.2rem;
 }
 .intro__desc {
   color: #ffffff;
-  text-align: left;
-  font: 400 14px/30px "Poppins", sans-serif;
-  position: relative;
-  width: 667.8px;
+  font: 400 1.4rem/3rem "Poppins", sans-serif;
+  width: 66.8rem;
 }
 .intro__logo {
   flex-shrink: 0;
-  position: relative;
   overflow: visible;
 }
 .intro__screen {
   flex-shrink: 0;
-  width: 1400px;
-  height: 907px;
-  position: relative;
 }

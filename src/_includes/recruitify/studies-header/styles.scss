@@ -16,7 +16,6 @@
 }
 
 .studies-header__subtitle {
-  // font-family: .AppleSystemUIFont;
   font-size: 1.2rem;
   color: #013243;
   line-height: 2.6rem;
@@ -24,12 +23,12 @@
 }
 
 .studies-header__title {
-  font-family: Helvetica;
   font-size: 4.8rem;
   line-height: 5.8rem;
+  font-weight: 600;
   color: #013243;
   margin-top: 1rem;
-  max-width: 32rem;
+  max-width: 44rem;
 }
 
 .studies-header__separator {
@@ -41,7 +40,6 @@
 }
 
 .studies-header__copy {
-  font-family: Helvetica;
   font-size: 1.6rem;
   color: #013243;
   line-height: 2.6rem;
@@ -60,14 +58,12 @@
 
 .studies-header__col-title {
   opacity: 0.5;
-  font-family: Helvetica;
   font-size: 1.0rem;
   color: #013243;
   line-height: 2.8rem;
 }
 
 .studies-header__col-copy {
-  // font-family: .AppleSystemUIFont;
   font-size: 1.1rem;
   color: #013243;
   line-height: 2.8rem;

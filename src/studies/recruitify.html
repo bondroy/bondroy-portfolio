@@ -7,6 +7,12 @@ title: Recruitify
 {% block body %}
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    .recruitify-case-study {
+      font-family: 'Poppins', sans-serif;
+    }
+
     .recruitify-case-study > img {
       width: 100%;
     }
@@ -15,19 +21,30 @@ title: Recruitify
   <div class="recruitify-case-study">
 
     {% include 'recruitify/studies-header/index.html' %}
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <svg class="vector" width="1236" height="279" viewBox="0 0 1236 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M984.992 213.288C984.37 215.979 981.686 217.656 978.995 217.035C976.304 216.414 974.627 213.729 975.248 211.038C975.869 208.348 978.554 206.67 981.244 207.291C983.935 207.913 985.613 210.597 984.992 213.288Z" fill="#E0E5E8"/>
+        <path d="M632.598 162.069C631.977 164.76 629.292 166.438 626.602 165.816C623.911 165.195 622.233 162.51 622.855 159.82C623.476 157.129 626.161 155.451 628.851 156.073C631.542 156.694 633.22 159.379 632.598 162.069Z" fill="#E0E5E8"/>
+        <path d="M348.872 143.006C348.251 145.697 345.566 147.375 342.875 146.754C340.185 146.132 338.507 143.448 339.128 140.757C339.749 138.066 342.434 136.389 345.125 137.01C347.816 137.631 349.493 140.316 348.872 143.006Z" fill="#E0E5E8"/>
+        <path d="M9.87198 71.0065C9.2508 73.6971 6.56603 75.3747 3.87538 74.7536C1.18473 74.1324 -0.492904 71.4476 0.128282 68.7569C0.749467 66.0663 3.43424 64.3887 6.12489 65.0098C8.81554 65.631 10.4932 68.3158 9.87198 71.0065Z" fill="#E0E5E8"/>
+        <path d="M180.742 97.02C180.885 96.3991 180.498 95.7796 179.877 95.6362C179.256 95.4928 178.637 95.88 178.494 96.5009L177.888 99.1242L175.265 98.5186C174.644 98.3752 174.024 98.7624 173.881 99.3833C173.737 100.004 174.125 100.624 174.746 100.767L177.369 101.373L176.763 103.996C176.62 104.617 177.007 105.237 177.628 105.38C178.249 105.523 178.868 105.136 179.012 104.515L179.617 101.892L182.241 102.498C182.862 102.641 183.481 102.254 183.624 101.633C183.768 101.012 183.381 100.392 182.76 100.249L180.136 99.6433L180.742 97.02Z" fill="#E0E5E8"/>
+        <path d="M896.777 269.914C896.92 269.293 896.533 268.674 895.912 268.53C895.291 268.387 894.672 268.774 894.528 269.395L893.923 272.018L891.299 271.413C890.678 271.269 890.059 271.657 889.916 272.277C889.772 272.898 890.159 273.518 890.78 273.661L893.404 274.267L892.798 276.89C892.655 277.511 893.042 278.131 893.663 278.274C894.284 278.417 894.903 278.03 895.046 277.409L895.652 274.786L898.275 275.392C898.896 275.535 899.516 275.148 899.659 274.527C899.803 273.906 899.415 273.287 898.794 273.143L896.171 272.538L896.777 269.914Z" fill="#E0E5E8"/>
+        <path d="M712.92 230.547C713.064 229.926 712.677 229.306 712.056 229.163C711.435 229.019 710.815 229.407 710.672 230.027L710.066 232.651L707.443 232.045C706.822 231.902 706.202 232.289 706.059 232.91C705.916 233.531 706.303 234.15 706.924 234.294L709.547 234.899L708.941 237.523C708.798 238.144 709.185 238.763 709.806 238.906C710.427 239.05 711.047 238.663 711.19 238.042L711.796 235.418L714.419 236.024C715.04 236.167 715.659 235.78 715.803 235.159C715.946 234.538 715.559 233.919 714.938 233.775L712.315 233.17L712.92 230.547Z" fill="#E0E5E8"/>
+        <path d="M53.022 188.026C53.1654 187.405 52.7782 186.785 52.1573 186.642C51.5364 186.498 50.9168 186.886 50.7735 187.506L50.1678 190.13L47.5445 189.524C46.9236 189.381 46.3041 189.768 46.1607 190.389C46.0174 191.01 46.4045 191.629 47.0254 191.773L49.6487 192.378L49.0431 195.002C48.8997 195.623 49.2869 196.242 49.9078 196.385C50.5287 196.529 51.1483 196.142 51.2916 195.521L51.8973 192.897L54.5206 193.503C55.1415 193.646 55.7611 193.259 55.9044 192.638C56.0478 192.017 55.6606 191.398 55.0397 191.255L52.4164 190.649L53.022 188.026Z" fill="#E0E5E8"/>
+      </svg>
+    </div>
+
     {% include 'recruitify/intro/index.html' %}
 
-    <img
-      loading="lazy"
-      decoding="async"
-      src="{{ '/img/recruitify-intro@1x.jpg' | url }}"
-      width="{{ '/img/recruitify-intro@1x.jpg' | imgWidth }}"
-      height="{{ '/img/recruitify-intro@1x.jpg' | imgHeight }}"
-      srcset="
-        {{ '/img/recruitify-intro@1x.jpg' | url }} 1000w,
-        {{ '/img/recruitify-intro@2x.jpg' | url }} 2000w,
-    ">
-
+    <div style="margin: 17rem 0 1.5rem 0">
+      {% set headline__width = '810px' %}
+      {% set headline__no = '02' %}
+      {% set headline__meta = 'Scope of work' %}
+      {% set headline__title = 'What we did' %}
+      {% set headline__desc = 'We defined the necessary phases tailored to Recruitify’s needs. A holistic approach was the key thing to achieve the best results. Some of the not entirely dependent stages’ parts were done simultaneously as you can see on the attached timeline. App development was done in-house by the Recruitify team.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -39,6 +56,14 @@ title: Recruitify
         {{ '/img/recruitify-sow@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin: 17rem 0 1.5rem 0">
+      {% set headline__width = '810px' %}
+      {% set headline__no = '03' %}
+      {% set headline__meta = 'PRODUCT Structure' %}
+      {% set headline__title = 'OK, but what exactly?' %}
+      {% set headline__desc = 'The whole project contains many pieces. This is just a preview so you can have a bigger picture learning about our process and the way we approached the project. All parts are described more in Chapter 11. The web application is the biggest, most crucial part, with massive impact on all other pieces.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -50,17 +75,58 @@ title: Recruitify
         {{ '/img/recruitify-structure@2x.jpg' | url }} 2000w,
     ">
 
-    <img
-      loading="lazy"
-      decoding="async"
-      src="{{ '/img/recruitify-goals@1x.jpg' | url }}"
-      width="{{ '/img/recruitify-goals@1x.jpg' | imgWidth }}"
-      height="{{ '/img/recruitify-goals@1x.jpg' | imgHeight }}"
-      srcset="
-        {{ '/img/recruitify-goals@1x.jpg' | url }} 1000w,
-        {{ '/img/recruitify-goals@2x.jpg' | url }} 2000w,
-    ">
+    <div class="recruitify-goals">
+      <div class="recruitify-goals__container container">
+        <div class="recruitify-goals__img">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="{{ '/img/recruitify-goals@1x.jpg' | url }}"
+            width="{{ '/img/recruitify-goals@1x.jpg' | imgWidth }}"
+            height="{{ '/img/recruitify-goals@1x.jpg' | imgHeight }}"
+            srcset="
+              {{ '/img/recruitify-goals@1x.jpg' | url }} 1000w,
+              {{ '/img/recruitify-goals@2x.jpg' | url }} 2000w,
+          ">
+        </div>
+        <div class="recruitify-goals__desc">
+          {% set headline__width = '560px' %}
+          {% set headline__no = '04' %}
+          {% set headline__meta = 'Goals' %}
+          {% set headline__title = 'What were the goals?' %}
+          {% set headline__desc = 'The main goal was to support and seamlessly guide the client through whole the process. After the initial meetings, we worked the project goals out and then updated them after conducting research. All the goals are strongly connected to each other creating a guide for the entire process.' %}
+          {% include 'recruitify/headline/index.html' %}
+        </div>
+      </div>
+    </div>
+    <style>
+      .recruitify-goals__container {
+        display: flex;
+        align-items: center;
+      }
+      .recruitify-goals__img {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 40%;
+      }
+      .recruitify-goals__img img {
+        width: 100%;
+      }
+      .recruitify-goals__desc {
+        position: relative;
+        left: 10%;
+      }
+    </style>
 
+    <div style="margin: 11rem 0 2rem 0">
+      {% set headline__width = '810px' %}
+      {% set headline__no = '05' %}
+      {% set headline__meta = 'Key Metrics' %}
+      {% set headline__title = 'What did we discover initially?' %}
+      {% set headline__desc = 'In order to understand the main issues and needs of the users, we conducted user interview sessions among carefully selected recruitment company employees.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -72,6 +138,14 @@ title: Recruitify
         {{ '/img/recruitify-metrics@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="position: relative; height: 0; top: 30rem;">
+      {% set headline__width = '550px' %}
+      {% set headline__no = '06' %}
+      {% set headline__meta = 'PROTO-Personas' %}
+      {% set headline__title = 'Who is the ideal user?' %}
+      {% set headline__desc = 'To classify the targeted audience, three proto-personas were defined. They were created based on the conducted research and survey results. We present the most common example below.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -83,6 +157,14 @@ title: Recruitify
         {{ '/img/recruitify-personas@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin: 14rem 0 2rem 0">
+      {% set headline__width = '920px' %}
+      {% set headline__no = '07' %}
+      {% set headline__meta = 'INFORMATION ARCHITECTURE' %}
+      {% set headline__title = 'What do we have here?' %}
+      {% set headline__desc = 'Once we conducted the research and worked user personas out we focused on structurizing every piece of data we had.We wanted to make sure that proper information structure and hierarchy is preserved. Here is the piece of the whole application structure flow.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -94,6 +176,14 @@ title: Recruitify
         {{ '/img/recruitify-architecture@2x.jpg' | url }} 2000w,
     ">
 
+    <!--
+      {% set headline__width = '760px' %}
+      {% set headline__no = '08' %}
+      {% set headline__meta = 'Wireframes' %}
+      {% set headline__title = 'How will it work?' %}
+      {% set headline__desc = 'Having prepared all the information architecture, a good deal of time was spent on wireframing and prototyping. The more ideas we tried and tested the more time we were able to save in the next stages.' %}
+      {% include 'recruitify/headline/index.html' %}
+    -->
     <img
       loading="lazy"
       decoding="async"
@@ -105,6 +195,14 @@ title: Recruitify
         {{ '/img/recruitify-screens@2x.jpg' | url }} 2000w,
     ">
 
+    <!--
+      {% set headline__width = '690px' %}
+      {% set headline__no = '09' %}
+      {% set headline__meta = 'Branding' %}
+      {% set headline__title = 'What does the face of the business look like?' %}
+      {% set headline__desc = 'Key assumptions were to keep the brand appealing, friendly but not too playful at the same time. We kept in mind that Recruitify is meant to be a tool, used by professionals on a daily basis.' %}
+      {% include 'recruitify/headline/index.html' %}
+    -->
     <img
       loading="lazy"
       decoding="async"
@@ -127,6 +225,14 @@ title: Recruitify
         {{ '/img/recruitify-logos@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin: 20rem 0 3rem 0">
+      {% set headline__width = '780px' %}
+      {% set headline__no = '10' %}
+      {% set headline__meta = 'Design System' %}
+      {% set headline__title = 'How is it built?' %}
+      {% set headline__desc = 'Based on the established wireframes and branding guidelines, taking all user testing conclusions into account, we built the entire design system from scratch. The very core of the work was to create a flexible set of rules and components that can be used across both web and mobile applications. Everything was built using Atomic Design methodology, having best practices and users’ experiences in mind.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -149,17 +255,15 @@ title: Recruitify
         {{ '/img/recruitify-system-2@2x.jpg' | url }} 2000w,
     ">
 
-    <img
-      loading="lazy"
-      decoding="async"
-      src="{{ '/img/recruitify-intro@1x.jpg' | url }}"
-      width="{{ '/img/recruitify-intro@1x.jpg' | imgWidth }}"
-      height="{{ '/img/recruitify-intro@1x.jpg' | imgHeight }}"
-      srcset="
-        {{ '/img/recruitify-intro@1x.jpg' | url }} 1000w,
-        {{ '/img/recruitify-intro@2x.jpg' | url }} 2000w,
-    ">
 
+    <div style="margin: 17rem 0 6rem 0">
+      {% set headline__width = '870px' %}
+      {% set headline__no = '11' %}
+      {% set headline__meta = 'RELEASED PRODUCT' %}
+      {% set headline__title = 'How does it look & feel?' %}
+      {% set headline__desc = 'We approach projects in a holistic way, delivering all pieces of the puzzle.In this section we present final results divided into several parts. Obiously, the web application is crucial and the biggest part. That’s what this is all about but we also wanted to show other work we have done as they all create Recruitify as a product.' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -275,6 +379,14 @@ title: Recruitify
         {{ '/img/recruitify-mail@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin: 16rem 0 0 0">
+      {% set headline__width = '1000px' %}
+      {% set headline__no = '12' %}
+      {% set headline__meta = 'Challenges' %}
+      {% set headline__title = 'What we learned from the most.' %}
+      {% set headline__desc = 'Every project has its challenges. While creating Recruitfy we have faced a lot of challenges that pushed us forward. They helped us grow and complete every next project even better. We managed to overcome them by focusing on our goals and continuing to move one step at a time. Let us list the major ones below. ' %}
+      {% include 'recruitify/headline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
