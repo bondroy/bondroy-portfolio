@@ -6,7 +6,297 @@ title: Recruitify
 
 {% block body %}
 
-  {% include 'recruitify/studies-header/index.html' %}
-  {% include 'recruitify/intro/index.html' %}
+  <style>
+    .recruitify-case-study > img {
+      width: 100%;
+    }
+  </style>
+
+  <div class="recruitify-case-study">
+
+    {% include 'recruitify/studies-header/index.html' %}
+    {% include 'recruitify/intro/index.html' %}
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-intro@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-intro@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-intro@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-intro@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-intro@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-sow@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-sow@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-sow@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-sow@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-sow@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-structure@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-structure@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-structure@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-structure@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-structure@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-goals@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-goals@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-goals@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-goals@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-goals@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-metrics@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-metrics@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-metrics@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-metrics@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-metrics@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-personas@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-personas@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-personas@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-personas@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-personas@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-architecture@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-architecture@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-architecture@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-architecture@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-architecture@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-screens@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-screens@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-screens@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-screens@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-screens@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-equal@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-equal@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-equal@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-equal@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-equal@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-logos@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-logos@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-logos@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-logos@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-logos@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-system@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-system@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-system@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-system@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-system@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-system-2@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-system-2@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-system-2@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-system-2@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-system-2@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-intro@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-intro@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-intro@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-intro@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-intro@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod1@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod1@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod1@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod1@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod1@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod2@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod2@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod2@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod2@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod2@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod3@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod3@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod3@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod3@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod3@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod4@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod4@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod4@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod4@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod4@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod5@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod5@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod5@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod5@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod5@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod6@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod6@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod6@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod6@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod6@2x.jpg' | url }} 2000w,
+    ">
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-prod7@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-prod7@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-prod7@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-prod7@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-prod7@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-mobile@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-mobile@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-mobile@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-mobile@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-mobile@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-landing@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-landing@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-landing@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-landing@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-landing@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-perspective@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-perspective@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-perspective@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-perspective@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-perspective@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-mail@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-mail@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-mail@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-mail@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-mail@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-challenges@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-challenges@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-challenges@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-challenges@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-challenges@2x.jpg' | url }} 2000w,
+    ">
+
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-thx@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-thx@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-thx@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-thx@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-thx@2x.jpg' | url }} 2000w,
+    ">
+
+  </div>
 
 {% endblock %}
