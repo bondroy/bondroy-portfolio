@@ -1,0 +1,13 @@
+<div class="subheadline">
+  <div class="subheadline__container container">
+    <div class="subheadline__top">
+      <div class="subheadline__meta">{{ subheadline__meta }}</div>
+      <div class="subheadline__title">{{ subheadline__title }}</div>
+    </div>
+    <p class="subheadline__desc" style="max-width: {{ subheadline__width }}">{{ subheadline__desc }}</p>
+  </div>
+</div>
+
+<style>
+  {% require_once 'recruitify/subheadline/build/styles.css' | safe %}
+</style>

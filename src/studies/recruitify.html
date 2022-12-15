@@ -13,7 +13,8 @@ title: Recruitify
       font-family: 'Poppins', sans-serif;
     }
 
-    .recruitify-case-study > img {
+    .recruitify-case-study > img,
+    .recruitify-case-study > video {
       width: 100%;
     }
   </style>
@@ -38,7 +39,7 @@ title: Recruitify
     {% include 'recruitify/intro/index.html' %}
 
     <div style="margin: 17rem 0 1.5rem 0">
-      {% set headline__width = '810px' %}
+      {% set headline__width = '81rem' %}
       {% set headline__no = '02' %}
       {% set headline__meta = 'Scope of work' %}
       {% set headline__title = 'What we did' %}
@@ -57,7 +58,7 @@ title: Recruitify
     ">
 
     <div style="margin: 17rem 0 1.5rem 0">
-      {% set headline__width = '810px' %}
+      {% set headline__width = '81rem' %}
       {% set headline__no = '03' %}
       {% set headline__meta = 'PRODUCT Structure' %}
       {% set headline__title = 'OK, but what exactly?' %}
@@ -90,7 +91,7 @@ title: Recruitify
           ">
         </div>
         <div class="recruitify-goals__desc">
-          {% set headline__width = '560px' %}
+          {% set headline__width = '56rem' %}
           {% set headline__no = '04' %}
           {% set headline__meta = 'Goals' %}
           {% set headline__title = 'What were the goals?' %}
@@ -120,7 +121,7 @@ title: Recruitify
     </style>
 
     <div style="margin: 11rem 0 2rem 0">
-      {% set headline__width = '810px' %}
+      {% set headline__width = '81rem' %}
       {% set headline__no = '05' %}
       {% set headline__meta = 'Key Metrics' %}
       {% set headline__title = 'What did we discover initially?' %}
@@ -139,7 +140,7 @@ title: Recruitify
     ">
 
     <div style="position: relative; height: 0; top: 30rem;">
-      {% set headline__width = '550px' %}
+      {% set headline__width = '55rem' %}
       {% set headline__no = '06' %}
       {% set headline__meta = 'PROTO-Personas' %}
       {% set headline__title = 'Who is the ideal user?' %}
@@ -158,7 +159,7 @@ title: Recruitify
     ">
 
     <div style="margin: 14rem 0 2rem 0">
-      {% set headline__width = '920px' %}
+      {% set headline__width = '92rem' %}
       {% set headline__no = '07' %}
       {% set headline__meta = 'INFORMATION ARCHITECTURE' %}
       {% set headline__title = 'What do we have here?' %}
@@ -176,14 +177,25 @@ title: Recruitify
         {{ '/img/recruitify-architecture@2x.jpg' | url }} 2000w,
     ">
 
-    <!--
-      {% set headline__width = '760px' %}
+    <div class="recruitify-wireframes">
+      <style>
+        .recruitify-wireframes {
+          position: relative;
+          height: 0;
+          top: 33rem;
+        }
+        .recruitify-wireframes .recruitify-headline__title,
+        .recruitify-wireframes .recruitify-headline__desc {
+          color: #fff;
+        }
+      </style>
+      {% set headline__width = '76rem' %}
       {% set headline__no = '08' %}
       {% set headline__meta = 'Wireframes' %}
       {% set headline__title = 'How will it work?' %}
       {% set headline__desc = 'Having prepared all the information architecture, a good deal of time was spent on wireframing and prototyping. The more ideas we tried and tested the more time we were able to save in the next stages.' %}
       {% include 'recruitify/headline/index.html' %}
-    -->
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -195,14 +207,14 @@ title: Recruitify
         {{ '/img/recruitify-screens@2x.jpg' | url }} 2000w,
     ">
 
-    <!--
-      {% set headline__width = '690px' %}
+    <div style="position: relative; height: 0; top: 32.5rem;">
+      {% set headline__width = '69rem' %}
       {% set headline__no = '09' %}
       {% set headline__meta = 'Branding' %}
       {% set headline__title = 'What does the face of the business look like?' %}
       {% set headline__desc = 'Key assumptions were to keep the brand appealing, friendly but not too playful at the same time. We kept in mind that Recruitify is meant to be a tool, used by professionals on a daily basis.' %}
       {% include 'recruitify/headline/index.html' %}
-    -->
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -226,7 +238,7 @@ title: Recruitify
     ">
 
     <div style="margin: 20rem 0 3rem 0">
-      {% set headline__width = '780px' %}
+      {% set headline__width = '78rem' %}
       {% set headline__no = '10' %}
       {% set headline__meta = 'Design System' %}
       {% set headline__title = 'How is it built?' %}
@@ -257,13 +269,23 @@ title: Recruitify
 
 
     <div style="margin: 17rem 0 6rem 0">
-      {% set headline__width = '870px' %}
+      {% set headline__width = '87rem' %}
       {% set headline__no = '11' %}
       {% set headline__meta = 'RELEASED PRODUCT' %}
       {% set headline__title = 'How does it look & feel?' %}
       {% set headline__desc = 'We approach projects in a holistic way, delivering all pieces of the puzzle.In this section we present final results divided into several parts. Obiously, the web application is crucial and the biggest part. That’s what this is all about but we also wanted to show other work we have done as they all create Recruitify as a product.' %}
       {% include 'recruitify/headline/index.html' %}
     </div>
+    <div>
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART I' %}
+      {% set subheadline__title = 'Application' %}
+      {% set subheadline__desc = 'Finally, after some parts of the wireframes and design system were done, we focused on the actual user interface. All the work was done simultaneously between these phases as they develop together as the app grows.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.1.1.mp4' | url }}" type="video/mp4">
+    </video>
     <img
       loading="lazy"
       decoding="async"
@@ -334,7 +356,17 @@ title: Recruitify
         {{ '/img/recruitify-prod7@1x.jpg' | url }} 1000w,
         {{ '/img/recruitify-prod7@2x.jpg' | url }} 2000w,
     ">
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.1.2.mp4' | url }}" type="video/mp4">
+    </video>
 
+    <div style="margin-top: 14rem">
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART II' %}
+      {% set subheadline__title = 'Mobile app' %}
+      {% set subheadline__desc = 'After finalizing all web application screens we made it to the mobile app.  It\'s a web platform extension wrapped in a cross-platform mobile application, with the necessary navigation and device specifications in mind.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -345,7 +377,18 @@ title: Recruitify
         {{ '/img/recruitify-mobile@1x.jpg' | url }} 1000w,
         {{ '/img/recruitify-mobile@2x.jpg' | url }} 2000w,
     ">
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.2.1.mp4' | url }}" type="video/mp4">
+    </video>
 
+
+    <div style="margin-top: 14rem">
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART III' %}
+      {% set subheadline__title = 'Landing page' %}
+      {% set subheadline__desc = 'Every business requires a landing page. That\'s what we covered next, listing and explaining all the futures, creating custom illustrations matching Recruitify brand look and feel.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -357,6 +400,40 @@ title: Recruitify
         {{ '/img/recruitify-landing@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin-top: 14rem">
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART IV' %}
+      {% set subheadline__title = 'White label Careers Portal' %}
+      {% set subheadline__desc = 'Recruitify\'s careers portal is another part of the whole product. It enables Recruitify\'s clients to create a branded career portal where candidates can access career content and apply for open jobs directly connected to the ATS. The whole portal is done as a white label to make branding customization easy.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
+    <img
+      loading="lazy"
+      decoding="async"
+      src="{{ '/img/recruitify-portal@1x.jpg' | url }}"
+      width="{{ '/img/recruitify-portal@1x.jpg' | imgWidth }}"
+      height="{{ '/img/recruitify-portal@1x.jpg' | imgHeight }}"
+      srcset="
+        {{ '/img/recruitify-portal@1x.jpg' | url }} 1000w,
+        {{ '/img/recruitify-portal@2x.jpg' | url }} 2000w,
+    ">
+
+    <div style="margin-top: 14rem">
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART V' %}
+      {% set subheadline__title = 'Custom illustrations' %}
+      {% set subheadline__desc = 'We were also tasked with creating a series of illustrations that could be used to represent the brand in several different contexts. Despite different purposes, the goal was to keep them consistent.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.1.3.mp4' | url }}" type="video/mp4">
+    </video>
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.1.4.mp4' | url }}" type="video/mp4">
+    </video>
+    <video loop autoplay>
+      <source src="{{ '/video/recruitify-11.1.5.mp4' | url }}" type="video/mp4">
+    </video>
     <img
       loading="lazy"
       decoding="async"
@@ -368,6 +445,13 @@ title: Recruitify
         {{ '/img/recruitify-perspective@2x.jpg' | url }} 2000w,
     ">
 
+    <div style="margin-top: 14rem">
+      {% set subheadline__width = '81rem' %}
+      {% set subheadline__meta = 'RELEASED PRODUCT - PART VI' %}
+      {% set subheadline__title = 'Mail designs' %}
+      {% set subheadline__desc = 'The last part but not least was to create mail designs so users can receive system notifications, email newsletters, offers or sales promotions. Again, we wanted to keep them consistent with previously established brand guidelines.' %}
+      {% include 'recruitify/subheadline/index.html' %}
+    </div>
     <img
       loading="lazy"
       decoding="async"
@@ -380,7 +464,7 @@ title: Recruitify
     ">
 
     <div style="margin: 16rem 0 0 0">
-      {% set headline__width = '1000px' %}
+      {% set headline__width = '100rem' %}
       {% set headline__no = '12' %}
       {% set headline__meta = 'Challenges' %}
       {% set headline__title = 'What we learned from the most.' %}
