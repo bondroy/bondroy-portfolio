@@ -6,33 +6,31 @@
 
 .recruitify-headline__no {
   opacity: 0.4;
-  transform: rotate(-360deg);
   font-weight: 600;
   font-size: 8.6rem;
   color: #D3D8D9;
-  line-height: 2.1rem;
+  line-height: 1;
   padding-right: 2rem;
 }
 
 .recruitify-headline__headline {
-  width: calc(100% - 20rem);
+  width: calc(100% - 15rem);
 }
 
 .recruitify-headline__meta {
   font-weight: 600;
   font-size: 1.6rem;
   color: #02E079;
-  letter-spacing: 0;
   line-height: 2.6rem;
   text-transform: uppercase;
+  margin-bottom: .5rem;
 }
 
 .recruitify-headline__title {
   font-weight: 600;
   font-size: 3.6rem;
   color: #013243;
-  letter-spacing: 0;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .recruitify-headline__desc {
@@ -42,4 +40,20 @@
   letter-spacing: 0;
   line-height: 3rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 1040px) {
+  .recruitify-headline__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recruitify-headline__headline {
+    width: auto;
+    margin: 2rem 0;
+  }
+
+  .recruitify-headline__title {
+    line-height: 1.2;
+  }
 }

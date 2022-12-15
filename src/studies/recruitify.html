@@ -17,25 +17,18 @@ title: Recruitify
     .recruitify-case-study > video {
       width: 100%;
     }
+
+    @media (max-width: 1040px) {
+      .recruitify-case-study .container {
+        max-width: none;
+        padding: 0 10vw;
+      }
+    }
   </style>
 
   <div class="recruitify-case-study">
 
     {% include 'recruitify/studies-header/index.html' %}
-
-    <div style="display: flex; align-items: center; justify-content: center;">
-      <svg class="vector" width="1236" height="279" viewBox="0 0 1236 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M984.992 213.288C984.37 215.979 981.686 217.656 978.995 217.035C976.304 216.414 974.627 213.729 975.248 211.038C975.869 208.348 978.554 206.67 981.244 207.291C983.935 207.913 985.613 210.597 984.992 213.288Z" fill="#E0E5E8"/>
-        <path d="M632.598 162.069C631.977 164.76 629.292 166.438 626.602 165.816C623.911 165.195 622.233 162.51 622.855 159.82C623.476 157.129 626.161 155.451 628.851 156.073C631.542 156.694 633.22 159.379 632.598 162.069Z" fill="#E0E5E8"/>
-        <path d="M348.872 143.006C348.251 145.697 345.566 147.375 342.875 146.754C340.185 146.132 338.507 143.448 339.128 140.757C339.749 138.066 342.434 136.389 345.125 137.01C347.816 137.631 349.493 140.316 348.872 143.006Z" fill="#E0E5E8"/>
-        <path d="M9.87198 71.0065C9.2508 73.6971 6.56603 75.3747 3.87538 74.7536C1.18473 74.1324 -0.492904 71.4476 0.128282 68.7569C0.749467 66.0663 3.43424 64.3887 6.12489 65.0098C8.81554 65.631 10.4932 68.3158 9.87198 71.0065Z" fill="#E0E5E8"/>
-        <path d="M180.742 97.02C180.885 96.3991 180.498 95.7796 179.877 95.6362C179.256 95.4928 178.637 95.88 178.494 96.5009L177.888 99.1242L175.265 98.5186C174.644 98.3752 174.024 98.7624 173.881 99.3833C173.737 100.004 174.125 100.624 174.746 100.767L177.369 101.373L176.763 103.996C176.62 104.617 177.007 105.237 177.628 105.38C178.249 105.523 178.868 105.136 179.012 104.515L179.617 101.892L182.241 102.498C182.862 102.641 183.481 102.254 183.624 101.633C183.768 101.012 183.381 100.392 182.76 100.249L180.136 99.6433L180.742 97.02Z" fill="#E0E5E8"/>
-        <path d="M896.777 269.914C896.92 269.293 896.533 268.674 895.912 268.53C895.291 268.387 894.672 268.774 894.528 269.395L893.923 272.018L891.299 271.413C890.678 271.269 890.059 271.657 889.916 272.277C889.772 272.898 890.159 273.518 890.78 273.661L893.404 274.267L892.798 276.89C892.655 277.511 893.042 278.131 893.663 278.274C894.284 278.417 894.903 278.03 895.046 277.409L895.652 274.786L898.275 275.392C898.896 275.535 899.516 275.148 899.659 274.527C899.803 273.906 899.415 273.287 898.794 273.143L896.171 272.538L896.777 269.914Z" fill="#E0E5E8"/>
-        <path d="M712.92 230.547C713.064 229.926 712.677 229.306 712.056 229.163C711.435 229.019 710.815 229.407 710.672 230.027L710.066 232.651L707.443 232.045C706.822 231.902 706.202 232.289 706.059 232.91C705.916 233.531 706.303 234.15 706.924 234.294L709.547 234.899L708.941 237.523C708.798 238.144 709.185 238.763 709.806 238.906C710.427 239.05 711.047 238.663 711.19 238.042L711.796 235.418L714.419 236.024C715.04 236.167 715.659 235.78 715.803 235.159C715.946 234.538 715.559 233.919 714.938 233.775L712.315 233.17L712.92 230.547Z" fill="#E0E5E8"/>
-        <path d="M53.022 188.026C53.1654 187.405 52.7782 186.785 52.1573 186.642C51.5364 186.498 50.9168 186.886 50.7735 187.506L50.1678 190.13L47.5445 189.524C46.9236 189.381 46.3041 189.768 46.1607 190.389C46.0174 191.01 46.4045 191.629 47.0254 191.773L49.6487 192.378L49.0431 195.002C48.8997 195.623 49.2869 196.242 49.9078 196.385C50.5287 196.529 51.1483 196.142 51.2916 195.521L51.8973 192.897L54.5206 193.503C55.1415 193.646 55.7611 193.259 55.9044 192.638C56.0478 192.017 55.6606 191.398 55.0397 191.255L52.4164 190.649L53.022 188.026Z" fill="#E0E5E8"/>
-      </svg>
-    </div>
-
     {% include 'recruitify/intro/index.html' %}
 
     <div style="margin: 17rem 0 1.5rem 0">
@@ -116,7 +109,24 @@ title: Recruitify
       }
       .recruitify-goals__desc {
         position: relative;
-        left: 10%;
+        width: 55%;
+        left: 5%;
+      }
+
+      @media (max-width: 1040px) {
+        .recruitify-goals__container {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+        }
+        .recruitify-goals__img {
+          width: 100%;
+        }
+        .recruitify-goals__desc {
+          width: 100%;
+          left: 0;
+        }
+
+        .recruitify-goals__container .container { padding: 0; }
       }
     </style>
 
@@ -139,7 +149,21 @@ title: Recruitify
         {{ '/img/recruitify-metrics@2x.jpg' | url }} 2000w,
     ">
 
-    <div style="position: relative; height: 0; top: 30rem;">
+    <div class="recruitify-personas">
+      <style>
+        .recruitify-personas {
+          position: relative; height: 0; top: 30rem;
+        }
+        .recruitify-personas + img {
+          min-width: 1400px;
+        }
+
+        @media (max-width: 1040px) {
+          .recruitify-personas {
+            top: 10rem;
+          }
+        }
+      </style>
       {% set headline__width = '55rem' %}
       {% set headline__no = '06' %}
       {% set headline__meta = 'PROTO-Personas' %}
@@ -188,6 +212,15 @@ title: Recruitify
         .recruitify-wireframes .recruitify-headline__desc {
           color: #fff;
         }
+        .recruitify-wireframes + img {
+          min-width: 1200px;
+        }
+
+        @media (max-width: 1040px) {
+          .recruitify-wireframes {
+            top: 5rem;
+          }
+        }
       </style>
       {% set headline__width = '76rem' %}
       {% set headline__no = '08' %}
@@ -207,7 +240,18 @@ title: Recruitify
         {{ '/img/recruitify-screens@2x.jpg' | url }} 2000w,
     ">
 
-    <div style="position: relative; height: 0; top: 32.5rem;">
+    <div class="recruitify-branding">
+      <style>
+        .recruitify-branding {
+          position: relative; height: 0; top: 21.5vw;
+        }
+        @media (max-width: 1040px) {
+          .recruitify-branding {
+            height: auto;
+            /* top: 20; */
+          }
+        }
+      </style>
       {% set headline__width = '69rem' %}
       {% set headline__no = '09' %}
       {% set headline__meta = 'Branding' %}
